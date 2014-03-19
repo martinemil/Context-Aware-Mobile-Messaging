@@ -1,1 +1,30 @@
 // Messages-replica for iPhone (_messages.scss)
+
+.messages {
+	padding: 0;
+
+	li {
+		//remove list style
+		list-style: none;
+		// define size
+		width: 250px;
+		height: 150px;
+		// set fallback background
+		background: green;
+		// set backgorund gradient
+		@include gradient(#04da4d, #00d349);
+		border-radius: 20px;
+
+		&:after {
+			//define block
+			content: "";
+			display: block;
+			//define size
+			width: 20px;
+			height: 20px;
+			//set position
+			position: absolute;
+			background: red;
+		}
+	}
+}
