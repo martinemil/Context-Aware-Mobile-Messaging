@@ -1,13 +1,5 @@
-/* line 3, ../sass/partials/_messages.scss */
-h4 {
-  /* Fallback (could use .jpg/.png alternatively) */
-  background-color: red;
-  /* Safari 4, Chrome 1-9, iOS 3.2-4.3, Android 2.1-3.0 */
-  background-image: -webkit-gradient(linear, left top, right top, from(red), to(blue));
-  /* Firefox 3.6 - 15 */
-  background-image: -moz-linear-gradient(left, red, blue);
-  /* Opera 11.1 - 12 */
-  background-image: -o-linear-gradient(left, red, blue);
-  /* Opera 15+, Chrome 25+, IE 10+, Firefox 16+, Safari 6.1+, iOS 7+, Android 4.4+ */
-  background-image: linear-gradient(to right, #ff0000, #0000ff);
+/* line 7, ../sass/partials/_base.scss */
+.content {
+  margin: 10px 0;
+  padding: 10px;
 }
