@@ -4,6 +4,7 @@
 	padding: 0;
 
 	li {
+		position: relative;
 		//remove list style
 		list-style: none;
 		// define size
@@ -20,11 +21,14 @@
 			content: "";
 			display: block;
 			//define size
-			width: 20px;
-			height: 20px;
+			width: 26px;
+			height: 19px;
 			//set position
 			position: absolute;
-			background: red;
+			bottom: 0;
+			right: -11px;
+			//set background-image
+			background-image: url('../images/message-snippet.svg');
 		}
 	}
 }
