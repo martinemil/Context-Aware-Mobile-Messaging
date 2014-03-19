@@ -9,11 +9,26 @@
   padding: 0;
 }
 /* line 6, ../sass/partials/_messages.scss */
-.messages li {
+.messages .bubble-message, .messages .send-bubble, .messages .receive-bubble {
   position: relative;
+  margin-bottom: 10px;
   list-style: none;
   width: 250px;
   height: 150px;
+  border-radius: 20px;
+}
+/* line 18, ../sass/partials/_messages.scss */
+.messages .bubble-message:after, .messages .send-bubble:after, .messages .receive-bubble:after {
+  content: "";
+  display: block;
+  width: 26px;
+  height: 19px;
+  position: absolute;
+  bottom: 0;
+  right: -11px;
+}
+/* line 32, ../sass/partials/_messages.scss */
+.messages .send-bubble {
   background: green;
   /* Fallback (could use .jpg/.png alternatively) */
   background-color: #04da4d;
@@ -25,16 +40,16 @@
   background-image: -o-linear-gradient(top, #04da4d, #00d349);
   /* Opera 15+, Chrome 25+, IE 10+, Firefox 16+, Safari 6.1+, iOS 7+, Android 4.4+ */
   background-image: linear-gradient(to bottom, #04da4d, #00d349);
-  border-radius: 20px;
 }
-/* line 19, ../sass/partials/_messages.scss */
-.messages li:after {
-  content: "";
-  display: block;
-  width: 26px;
-  height: 19px;
-  position: absolute;
-  bottom: 0;
-  right: -11px;
-  background-image: url("../images/message-snippet.svg");
+/* line 39, ../sass/partials/_messages.scss */
+.messages .send-bubble:after {
+  background-image: url("../images/message-snippet_green.svg");
+}
+/* line 45, ../sass/partials/_messages.scss */
+.messages .receive-bubble {
+  background: #e5e5ea;
+}
+/* line 51, ../sass/partials/_messages.scss */
+.messages .receive-bubble:after {
+  background-image: url("../images/message-snippet_grey.svg");
 }
