@@ -1,2 +1,6 @@
-// Messages-replica for iPhone
+// Messages-replica for iPhone (_messages.scss)
+
+h4 {
+	@include gradient(red, blue);
+}
 
