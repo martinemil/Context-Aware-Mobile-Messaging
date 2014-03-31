@@ -37,7 +37,7 @@
 			// set fallback background
 			background: green;
 			// set backgorund gradient
-			@include gradient(#04da4d, #00d349);
+			@include gradient($message-green-top, $message-green);
 			// set position
 			float: right;
 
