@@ -1,7 +1,7 @@
 /* line 7, ../sass/partials/_base.scss */
 .content {
   margin: 10px 0;
-  padding: 10px;
+  padding: 30px;
 }
 
 /* line 3, ../sass/partials/_messages.scss */
@@ -9,26 +9,29 @@
   padding: 0;
 }
 /* line 6, ../sass/partials/_messages.scss */
-.messages .bubble-message, .messages .send-bubble, .messages .receive-bubble {
+.messages li {
+  width: 100%;
+  list-style: none;
+}
+/* line 11, ../sass/partials/_messages.scss */
+.messages li .bubble-message, .messages li .send-bubble, .messages li .receive-bubble {
   position: relative;
   margin-bottom: 10px;
-  list-style: none;
   width: 250px;
   height: 150px;
   border-radius: 20px;
 }
-/* line 18, ../sass/partials/_messages.scss */
-.messages .bubble-message:after, .messages .send-bubble:after, .messages .receive-bubble:after {
+/* line 21, ../sass/partials/_messages.scss */
+.messages li .bubble-message:after, .messages li .send-bubble:after, .messages li .receive-bubble:after {
   content: "";
   display: block;
   width: 26px;
   height: 19px;
   position: absolute;
   bottom: 0;
-  right: -11px;
 }
-/* line 32, ../sass/partials/_messages.scss */
-.messages .send-bubble {
+/* line 34, ../sass/partials/_messages.scss */
+.messages li .send-bubble {
   background: green;
   /* Fallback (could use .jpg/.png alternatively) */
   background-color: #04da4d;
@@ -40,16 +43,20 @@
   background-image: -o-linear-gradient(top, #04da4d, #00d349);
   /* Opera 15+, Chrome 25+, IE 10+, Firefox 16+, Safari 6.1+, iOS 7+, Android 4.4+ */
   background-image: linear-gradient(to bottom, #04da4d, #00d349);
+  float: right;
 }
-/* line 39, ../sass/partials/_messages.scss */
-.messages .send-bubble:after {
+/* line 43, ../sass/partials/_messages.scss */
+.messages li .send-bubble:after {
   background-image: url("../images/message-snippet_green.svg");
-}
-/* line 45, ../sass/partials/_messages.scss */
-.messages .receive-bubble {
-  background: #e5e5ea;
+  right: -11px;
 }
 /* line 51, ../sass/partials/_messages.scss */
-.messages .receive-bubble:after {
+.messages li .receive-bubble {
+  background: #e5e5ea;
+  float: left;
+}
+/* line 59, ../sass/partials/_messages.scss */
+.messages li .receive-bubble:after {
   background-image: url("../images/message-snippet_grey.svg");
+  left: -11px;
 }

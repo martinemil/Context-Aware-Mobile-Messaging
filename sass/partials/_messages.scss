@@ -3,54 +3,65 @@
 .messages {
 	padding: 0;
 
-	.bubble-message {
-		// set position
-		position: relative;
-		margin-bottom: 10px;
+	li {
+		width: 100%;
 		//remove list style
 		list-style: none;
-		// define size
-		width: 250px;
-		height: 150px;
-		//
-		border-radius: 20px;
 
-		&:after {
-			//define block
-			content: "";
-			display: block;
-			//define size
-			width: 26px;
-			height: 19px;
-			//set position
-			position: absolute;
-			bottom: 0;
-			right: -11px;
+		.bubble-message {
+			// set position
+			position: relative;
+			margin-bottom: 10px;
+			// define size
+			width: 250px;
+			height: 150px;
+			//
+			border-radius: 20px;
+
+			&:after {
+				//define block
+				content: "";
+				display: block;
+				//define size
+				width: 26px;
+				height: 19px;
+				//set position
+				position: absolute;
+				bottom: 0;
+			}
 		}
-	}
 
-	.send-bubble {
-		@extend .bubble-message;
-		// set fallback background
-		background: green;
-		// set backgorund gradient
-		@include gradient(#04da4d, #00d349);
+		.send-bubble {
+			@extend .bubble-message;
+			// set fallback background
+			background: green;
+			// set backgorund gradient
+			@include gradient(#04da4d, #00d349);
+			// set position
+			float: right;
 
-		&:after {
-			//set background-image
-			background-image: url('../images/message-snippet_green.svg');
+			&:after {
+				//set background-image
+				background-image: url('../images/message-snippet_green.svg');
+				// set posotion
+				right: -11px;
+			}
 		}
-	}
 
-	.receive-bubble {
-		@extend .bubble-message;
-		// set background
-		background: #e5e5ea;
+		.receive-bubble {
+			@extend .bubble-message;
+			// set background
+			background: #e5e5ea;
+			// set position
+			float: left;
 
 
-		&:after {
-			//set background-image
-			background-image: url('../images/message-snippet_grey.svg');
+			&:after {
+				//set background-image
+				background-image: url('../images/message-snippet_grey.svg');
+				// set posotion
+				left: -11px;
+			}
 		}
 	}
 }
