@@ -8,16 +8,23 @@
 		//remove list style
 		list-style: none;
 
+		&:after {
+		    content:'';
+		    display:block;
+		    clear: both;
+		}
+
 		.bubble-message {
 			// set position
 			position: relative;
 			margin-bottom: 10px;
 			// define size
-			width: 250px;
-			height: 150px;
+			max-width: 80%;
 			//
 			border-radius: 20px;
-			padding: 10px;
+			padding: 12px 15px;
+			font-size: 16px;
+			line-height: 20px;
 
 			&:after {
 				//define block
@@ -40,6 +47,8 @@
 			@include gradient($message-green-top, $message-green);
 			// set position
 			float: right;
+			// font
+			color: #fff;
 
 			&:after {
 				//set background-image
