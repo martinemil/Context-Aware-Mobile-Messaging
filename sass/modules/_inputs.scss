@@ -1,2 +1,12 @@
 // Inputs (_inputs.scss)
 
+$border-radius: 5px;
+
+input[type="text"] {
+    height: 28px;
+    font-size: 14px;
+
+    border: 0px;
+    -webkit-border-radius: $border-radius;
+    border-radius: $border-radius;
+}
