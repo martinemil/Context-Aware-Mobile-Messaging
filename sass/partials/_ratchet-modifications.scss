@@ -4,7 +4,12 @@
     background-color: #f8f8f8;
 }
 
-// 
+.bar a,
+.bar .btn {
+    color: $blue;
+}
+
+// Less margin on bar naviational links such as "Edit"
 .bar .btn.pull-left {
     margin-left: -2px;
 }
