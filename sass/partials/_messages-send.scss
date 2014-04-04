@@ -1,7 +1,23 @@
 // Base file (_messages-send.scss)
 
 .send-messages {
+	img {
+		float: left;
+		width: 25px;
+		height: 18px;
+		margin: 12px 10px 0 0;
+	}
+
 	.write-message-input {
-		width: 150px;
+		float: left;
+		width: 218px;
+	}
+
+	h4 {
+		float: right;
+		color: grey;
+		//font-weight: 400;
+		margin-top: 14px;
+		font-size: 16px;
 	}
 }

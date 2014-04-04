@@ -1,15 +1,31 @@
 /* line 7, ../sass/modules/_inputs.scss */
 input[type="text"] {
   height: 28px;
+  padding: 8px;
   font-size: 14px;
   border: 0px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 16, ../sass/modules/_inputs.scss */
+/* line 18, ../sass/modules/_inputs.scss */
 input[type="text"].write-message-input {
   border: 1px solid #c7c7c7;
-  margin-top: 7px;
+  margin-top: 8px;
+}
+/* line 23, ../sass/modules/_inputs.scss */
+input[type="text"].form-search_input {
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+/* line 3, ../sass/partials/_ratchet-modifications.scss */
+.bar {
+  background-color: #f8f8f8;
+}
+
+/* line 8, ../sass/partials/_ratchet-modifications.scss */
+.bar .btn.pull-left {
+  margin-left: -2px;
 }
 
 /* line 3, ../sass/partials/_messages-bubbles.scss */
@@ -79,14 +95,34 @@ input[type="text"].write-message-input {
   left: -11px;
 }
 
-/* line 1, ../sass/partials/_message-list.scss */
+/* line 3, ../sass/partials/_message-list.scss */
 .form-search {
-  padding: 5px;
+  padding: 8px;
   padding-bottom: 0;
   background-color: #c9c9ce;
 }
-/* line 6, ../sass/partials/_message-list.scss */
-.form-search input {
-  margin-bottom: 6px;
-  text-align: center;
+
+/* line 9, ../sass/partials/_message-list.scss */
+.table-view {
+  border-top: 0;
+}
+
+/* line 4, ../sass/partials/_messages-send.scss */
+.send-messages img {
+  float: left;
+  width: 25px;
+  height: 18px;
+  margin: 12px 10px 0 0;
+}
+/* line 11, ../sass/partials/_messages-send.scss */
+.send-messages .write-message-input {
+  float: left;
+  width: 218px;
+}
+/* line 16, ../sass/partials/_messages-send.scss */
+.send-messages h4 {
+  float: right;
+  color: grey;
+  margin-top: 14px;
+  font-size: 16px;
 }
