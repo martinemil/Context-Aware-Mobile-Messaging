@@ -43,9 +43,9 @@
 		.send-bubble {
 			@extend .bubble-message;
 			// set fallback background
-			background: green;
+			background: $blue;
 			// set backgorund gradient
-			@include gradient($message-green-top, $message-green);
+			//@include gradient($message-green-top, $message-green);
 			// set position
 			float: right;
 			// font
@@ -53,7 +53,7 @@
 
 			&:after {
 				//set background-image
-				background-image: url('../images/message-snippet_green.svg');
+				background-image: url('../images/message-snippet_blue.svg');
 				// set posotion
 				right: -11px;
 			}
