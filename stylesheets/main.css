@@ -1,20 +1,20 @@
-/* line 3, ../sass/partials/_messages.scss */
+/* line 3, ../sass/partials/_messages-bubbles.scss */
 .messages {
   margin: 10px 20px;
   padding: 0;
 }
-/* line 7, ../sass/partials/_messages.scss */
+/* line 7, ../sass/partials/_messages-bubbles.scss */
 .messages li {
   width: 100%;
   list-style: none;
 }
-/* line 12, ../sass/partials/_messages.scss */
+/* line 12, ../sass/partials/_messages-bubbles.scss */
 .messages li:after {
   content: '';
   display: block;
   clear: both;
 }
-/* line 18, ../sass/partials/_messages.scss */
+/* line 18, ../sass/partials/_messages-bubbles.scss */
 .messages li .bubble-message, .messages li .send-bubble, .messages li .receive-bubble {
   position: relative;
   margin-bottom: 10px;
@@ -24,7 +24,7 @@
   font-size: 16px;
   line-height: 20px;
 }
-/* line 30, ../sass/partials/_messages.scss */
+/* line 30, ../sass/partials/_messages-bubbles.scss */
 .messages li .bubble-message:after, .messages li .send-bubble:after, .messages li .receive-bubble:after {
   content: "";
   display: block;
@@ -33,7 +33,7 @@
   position: absolute;
   bottom: 0;
 }
-/* line 43, ../sass/partials/_messages.scss */
+/* line 43, ../sass/partials/_messages-bubbles.scss */
 .messages li .send-bubble {
   background: green;
   /* Fallback (could use .jpg/.png alternatively) */
@@ -49,17 +49,17 @@
   float: right;
   color: #fff;
 }
-/* line 54, ../sass/partials/_messages.scss */
+/* line 54, ../sass/partials/_messages-bubbles.scss */
 .messages li .send-bubble:after {
   background-image: url("../images/message-snippet_green.svg");
   right: -11px;
 }
-/* line 62, ../sass/partials/_messages.scss */
+/* line 62, ../sass/partials/_messages-bubbles.scss */
 .messages li .receive-bubble {
   background: #e5e5ea;
   float: left;
 }
-/* line 70, ../sass/partials/_messages.scss */
+/* line 70, ../sass/partials/_messages-bubbles.scss */
 .messages li .receive-bubble:after {
   background-image: url("../images/message-snippet_grey.svg");
   left: -11px;
