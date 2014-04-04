@@ -1,11 +1,13 @@
 // Inputs (_inputs.scss)
 
-// all text inputs
+// All text inputs
 
 $border-radius: 5px;
 
 input[type="text"] {
     height: 28px;
+    padding: 8px;
+    
     font-size: 14px;
 
     border: 0px;
@@ -15,6 +17,11 @@ input[type="text"] {
     // text input for messages
     &.write-message-input {
 		border: 1px solid $grey;
-		margin-top: 7px;
+		margin-top: 8px;
 	}
+
+    &.form-search_input {
+        margin-bottom: 8px;
+        text-align: center;
+    }
 }
