@@ -15,6 +15,25 @@
 		    clear: both;
 		}
 
+		.message-time {
+			// text styling
+			color: $grey;
+			font-size: 13px;
+			// set position
+			text-align: center;
+			margin-bottom: 10px;
+		}
+
+		.message-receive-info {
+			// text styling
+			color: $grey;
+			font-size: 13px;
+			font-weight: bold;
+			// set position
+			float: right;
+			margin-top: -7px;
+		}
+
 		.bubble-message {
 			// set position
 			position: relative;
@@ -52,7 +71,7 @@
 			color: #fff;
 
 			&:after {
-				//set background-image
+				// set background-image
 				background-image: url('../images/message-snippet_blue.svg');
 				// set posotion
 				right: -11px;
