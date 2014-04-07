@@ -2,15 +2,21 @@
 
 .bar {
     background-color: rgba(248,248,248,0.97); // hex: #f8f8f8
+
+    a,
+    .btn {
+        color: $blue;
+    }
+
+    // Less margin on bar naviational links such as "Edit"
+    .btn.pull-left {
+        margin-left: -2px;
+    }
+
+    .btn.pull-right {
+        margin-right: -2px;
+    }
 }
 
-.bar a,
-.bar .btn {
-    color: $blue;
-}
 
-// Less margin on bar naviational links such as "Edit"
-.bar .btn.pull-left {
-    margin-left: -2px;
-}
 

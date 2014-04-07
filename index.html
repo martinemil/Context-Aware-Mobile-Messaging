@@ -25,11 +25,29 @@
     <!-- Make sure all your bars are the first things in your <body> -->
     <header class="bar bar-nav">
       <button class="btn btn-link btn-nav pull-left">
-        Edit
+        Rediger
       </button>
-      <a class="icon icon-compose pull-right"></a>
+      
+      <a href="#newMessageModal" class="icon icon-compose pull-right"></a>
+
       <h1 class="title">Beskeder</h1>
     </header>
+
+      <div id="newMessageModal" class="modal">
+        <header class="bar bar-nav">
+          <a href="#newMessageModal">
+            <button class="btn btn-link btn-nav pull-right">
+              Annuller
+            </button>
+          </a>
+
+          <h1 class="title">Ny besked</h1>
+        </header>
+
+        <div class="content">
+          <p class="content-padded">Phasellus non ipsum et nisi sagittis condimentum. Donec at elementum orci. Vestibulum velit dolor, tincidunt eget risus vitae, venenatis ultricies lorem. Integer feugiat magna ac viverra rhoncus. Curabitur ultrices vulputate felis vel consectetur. Ut varius orci eu urna suscipit pharetra. Pellentesque scelerisque lorem ac ligula pharetra pellentesque.</p>
+        </div>
+      </div>
 
     <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
     <div class="content">
