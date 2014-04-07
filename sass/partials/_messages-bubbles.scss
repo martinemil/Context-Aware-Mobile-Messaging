@@ -17,17 +17,17 @@
 
 		.message-time {
 			// text styling
-			color: $grey;
-			font-size: 13px;
+			color: $message-grey;
+			font-size: 11px;
 			// set position
 			text-align: center;
-			margin-bottom: 10px;
+			margin-bottom: 7px;
 		}
 
 		.message-receive-info {
 			// text styling
-			color: $grey;
-			font-size: 13px;
+			color: $message-grey;
+			font-size: 11px;
 			font-weight: bold;
 			// set position
 			float: right;
