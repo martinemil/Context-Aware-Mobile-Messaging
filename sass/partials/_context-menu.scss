@@ -1,2 +1,23 @@
 // Context-menu (_context-menu.scss)
 
+.context-menu {
+	// set position
+	position: absolute;
+	top: 50px;
+	right: 50px;
+	// look
+	background: white;
+	border: 1px solid grey;
+	// size
+	width: 75px;
+	height: 200px;
+
+	.item {
+		// size
+		width: 75px;
+		height: 75px;
+		// look
+		background: yellow;
+		
+	}
+}
