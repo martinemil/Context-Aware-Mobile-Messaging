@@ -8,5 +8,14 @@
 
 .table-view {
     border-top: 0;
+    border-bottom: 0;
+    margin-bottom: 0;
 }
 
+.table-view-cell {
+    // border-bottom: 0;
+}
+
+.table-view-cell > a:not(.btn) {
+    padding-left: 30px;
+}
