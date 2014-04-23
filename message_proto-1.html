@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Standardbesked</title>
+
+    <!-- Sets initial viewport load and disables zooming  -->
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+
+    <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <!-- Include the compiled Ratchet CSS -->
+    <link href="ratchet/css/ratchet.css" rel="stylesheet">
+    
+    <!-- Inclue custom styles -->
+    <link href="stylesheets/main.css" rel="stylesheet">
+
+    <!-- Include the compiled Ratchet JS -->
+    <script src="ratchet/js/ratchet.js"></script>
+  </head>
+  <body>
+
+    <!-- Make sure all your bars are the first things in your <body> -->
+    <header class="bar bar-nav">
+      <!-- <a class="icon icon-left-nav pull-left" href="index.html">Beskeder</a> -->
+      <a href="index.html">
+        <button class="btn btn-link btn-nav pull-left">
+          <span class="icon icon-left-nav"></span>
+          Beskeder
+        </button>
+      </a>
+      <a class="icon icon-home pull-right"></a>
+      <h1 class="title">Lars</h1>
+      <div class="context-menu">
+        <div class="item">
+          
+        </div>
+      </div>
+    </header>
+
+    <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
+    <div class="content">
+      <ul class="messages">
+        <li><div class="message-time"><strong>i dag</strong> 11.08</div><div class="send-bubble">Hej Lars. Hvad tid kommer du hjem i dag?</div></li>
+        <li><div class="receive-bubble">Hej Lotte. Jeg tænker det bliver omkring kl. 17 </div></li>
+        <li><div class="send-bubble">Okay, sejt!</div></li>
+        <li><div class="receive-bubble">Har du forresten hørt at Christina har mistet sit job hos den lokale smed/blomsterbutik? De havde tilsyneladende ikke ressourcer til have hende som receptionist længere..</div></li>
+        <li><div class="message-time"><strong>i dag</strong> 12.32</div><div class="send-bubble">Forfærdeligt! Det er mener du var ikke vel?! Så har hun jo ingen fremtid..</div></li>
+        <li><div class="receive-bubble">Nej, absolut ingen. Jeg er på grådens rand på hendes vegne. Ved knap nok hvor jeg skal gøre af mig selv.. Det er meget ubehageligt!</div></li>
+        <li><div class="send-bubble">Nej da! Godt du kommer hjem kl. 17.</div></li>
+        <li><div class="message-receive-info">Leveret</div></li>
+      </ul>
+    </div>
+
+    <!-- Icons in standard bar fixed to the bottom of the screen -->
+    <div class="bar bar-standard bar-footer send-messages">
+        <img src="images/ios-camera-icon.png" alt="camera" />
+        <input class="write-message-input" type="text" placeholder="Tekstbesked">
+        <h4>Send</h4>
+    </div>
+
+  </body>
+</html>
