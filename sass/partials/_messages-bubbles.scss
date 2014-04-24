@@ -40,7 +40,6 @@
 			margin-bottom: 10px;
 			// define size
 			max-width: 80%;
-			//
 			border-radius: 20px;
 			padding: 8px 13px;
 			font-size: 16px;
@@ -95,5 +94,14 @@
 				left: -7px;
 			}
 		}
+	}
+
+	li:last-child:after {
+		content: "Leveret";
+		color: $message-grey;
+		font-size: 11px;
+		font-weight: bold;
+		float: right;
+		margin-top: -7px;
 	}
 }
