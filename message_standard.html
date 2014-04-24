@@ -59,20 +59,26 @@
 
     <!-- Icons in standard bar fixed to the bottom of the screen -->
     <div class="bar bar-standard bar-footer send-messages">
-        <img src="images/ios-camera-icon.png" alt="camera" />
+        <img class="icon-cam" src="images/ios-camera-icon.png" alt="camera" />
         <input class="write-message-input" type="text" placeholder="Tekstbesked">
-        <h4 class="button_send">Send</h4>
+        <a class="button_send disabled">Send</a>
     </div>
     
     <script type="text/javascript">
 
-      // var btnSend = document.querySelector('.button_send');
-      // btnSend.classList.add('active');
+      var textInput = document.querySelector('.write-message-input');
+      var btnSend = document.querySelector('.button_send');
+      
+      function checkInputValue() {
+        if (textInput.value) {
+          btnSend.classList.remove('disabled'); // Remove disabled class if input has value
+        } else {
+          btnSend.classList.add('disabled'); // Add disabled class if input does not have value
+        }
+        window.setTimeout("checkInputValue();", 100);
+      }
 
-      // function isNotEmpty(str) {
-      //   return (str.length > 0);
-      // }
-
+      checkInputValue();
     </script>
 
   </body>

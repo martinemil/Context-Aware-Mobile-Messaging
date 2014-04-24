@@ -1,7 +1,7 @@
 // Base file (_messages-send.scss)
 
 .send-messages {
-	img {
+	.icon-cam {
 		float: left;
 		width: 25px;
 		height: 18px;
@@ -13,14 +13,18 @@
 		width: 218px;
 	}
 
-	.button_send {
+	a.button_send {
 		float: right;
-		color: grey;
-		margin-top: 14px;
+		margin-top: 12px;
+		font-weight: 700;
+		color: $blue;
 		font-size: 16px;
+	}
+
+	a.disabled {
+		pointer-events: none;
+		cursor: default;
+		color: $message-grey;
 	}
 }
 
-.active {
-	color: $blue;
-}

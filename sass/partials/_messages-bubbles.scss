@@ -7,10 +7,14 @@
 	li {
 		list-style: none;
 		clear: both;
+
+		&:last-child {
+			margin-bottom: 25px;
+		}
 	}
 
 	.time {
-		// Set position
+		// Position
 		margin-bottom: 7px;
 		text-align: center;
 		// Text styling
@@ -19,7 +23,7 @@
 	}
 
 	.bubble-message {
-		// Set position
+		// Position
 		position: relative;
 		margin-bottom: 10px;
 		// Define size
@@ -31,7 +35,7 @@
 		line-height: 20px;
 
 		&:after {
-			// Set position
+			// Position
 			position: absolute;
 			bottom: 2px;
 			// Define size
@@ -58,9 +62,9 @@
 		}
 
 		&:last-of-type:before {
-			// Set position
+			// Position
 			position: absolute;
-			bottom: -22px;
+			bottom: -20px;
 			right: 0;
 			// Layout
 			content: "Leveret";
