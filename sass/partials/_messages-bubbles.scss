@@ -5,13 +5,12 @@
 	padding: 0;
 
 	li {
-		width: 100%;
-		//remove list style
+		
 		list-style: none;
 
 		&:after {
 		    content:'';
-		    display:block;
+		    display: block;
 		    clear: both;
 		}
 
@@ -86,7 +85,6 @@
 			// set position
 			float: left;
 
-
 			&:after {
 				//set background-image
 				background-image: url('../images/message-snippet_grey.svg');
@@ -96,12 +94,14 @@
 		}
 	}
 
-	li:last-child:after {
-		content: "Leveret";
-		color: $message-grey;
-		font-size: 11px;
-		font-weight: bold;
-		float: right;
-		margin-top: -7px;
-	}
+
+}
+
+.messages li.send-bubble:last-of-type:after {
+	content: "Leveret";
+	color: $message-grey;
+	font-size: 11px;
+	font-weight: bold;
+	float: right;
+	margin-top: -7px;
 }

@@ -13,11 +13,14 @@
 		width: 218px;
 	}
 
-	h4 {
+	.button_send {
 		float: right;
-		color: grey;
-		//font-weight: 400;
+		//color: grey;
 		margin-top: 14px;
 		font-size: 16px;
 	}
+}
+
+.active {
+	color: $blue;
 }
