@@ -1,0 +1,26 @@
+// Prototype 1 (_proto-1.scss)
+
+/* 
+
+Små ændringer med høj grad af neutralitet - interfacet tager få valg på brugerens vegne.
+Prototypen reorganiserer informationen på skærmen for at højne læseoplevelsen.
+Dette gøres ved at øge skriftstørrelsen på tekstbeskederne og samtidig kun
+vise én besked af gangen.
+
+*/
+
+.proto-1 {
+	.send-bubble, .receive-bubble {
+		// change font-size
+		font-size: 20px;
+		line-height: 25px;
+		// change padding
+		padding: 10px 13px;
+
+		opacity: .2;
+
+		&:last-child {
+			opacity: 1;
+		}
+	}
+}
