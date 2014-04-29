@@ -73,8 +73,6 @@
         window.setTimeout("checkInputValue();", 100);
       }
 
-      checkInputValue();
-
       // Send messages
       var msgContainer = document.querySelector('.messages');
 
@@ -87,11 +85,19 @@
         msgContainer.appendChild(newMsgLi); // Append message li to message container
 
         textInput.value = ''; // Clear value for input field
+        scrollToBottom(); // Scroll to bottom
       }
 
-      // Sroll to bottom
-      var contentDiv = document.querySelector('.content');
-      contentDiv.scrollTop = contentDiv.scrollHeight;
+      // Scroll to bottom
+      function scrollToBottom() {
+        var contentDiv = document.querySelector('.content');
+        contentDiv.scrollTop = contentDiv.scrollHeight;
+      }
+
+      //
+      checkInputValue();
+      scrollToBottom();
+
 
 
     </script>
