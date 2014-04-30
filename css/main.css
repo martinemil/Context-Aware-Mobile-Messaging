@@ -1,0 +1,165 @@
+@charset "UTF-8";
+input[type="text"] {
+  height: 28px;
+  padding: 8px;
+  font-size: 14px;
+  border: 0px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px; }
+  input[type="text"].write-message-input {
+    border: 1px solid #c7c7c7;
+    margin-top: 8px; }
+  input[type="text"].form-search_input {
+    margin-bottom: 8px;
+    text-align: center; }
+
+.content {
+  padding-bottom: 44px; }
+
+.bar {
+  background-color: rgba(248, 248, 248, 0.97); }
+  .bar a,
+  .bar .btn {
+    color: #007aff; }
+  .bar .btn.pull-left {
+    margin-left: -2px; }
+  .bar .btn.pull-right {
+    margin-right: -2px; }
+
+.messages {
+  margin: 10px 15px;
+  padding: 0; }
+  .messages li {
+    list-style: none;
+    clear: both; }
+    .messages li:last-child {
+      margin-bottom: 25px; }
+  .messages .time {
+    margin-bottom: 7px;
+    text-align: center;
+    color: #949499;
+    font-size: 11px; }
+  .messages .bubble-message, .messages .send-bubble, .messages .receive-bubble {
+    position: relative;
+    margin-bottom: 10px;
+    max-width: 80%;
+    padding: 8px 13px;
+    border-radius: 20px;
+    font-size: 16px;
+    line-height: 20px; }
+    .messages .bubble-message:after, .messages .send-bubble:after, .messages .receive-bubble:after {
+      position: absolute;
+      bottom: 2px;
+      width: 18px;
+      height: 13px;
+      content: "";
+      background-size: 100%; }
+  .messages .send-bubble {
+    background: #007aff;
+    float: right;
+    color: #fff; }
+    .messages .send-bubble:after {
+      background-image: url("../img/message-snippet_blue.svg");
+      right: -7px; }
+    .messages .send-bubble:last-of-type:before {
+      position: absolute;
+      bottom: -20px;
+      right: 0;
+      content: "Leveret";
+      color: #949499;
+      font-size: 11px;
+      font-weight: bold; }
+  .messages .receive-bubble {
+    background: #e5e5ea;
+    float: left; }
+    .messages .receive-bubble:after {
+      background-image: url("../img/message-snippet_grey.svg");
+      left: -7px; }
+  .messages .animate-in {
+    -webkit-animation: animate-in 0.6s; }
+
+@-webkit-keyframes animate-in {
+  from {
+    -webkit-transform: translateY(100px); }
+
+  to {
+    -webkit-transform: translateY(0px); } }
+
+.form-search {
+  padding: 8px;
+  padding-bottom: 0;
+  background-color: #c9c9ce; }
+
+.table-view {
+  border-top: 0;
+  border-bottom: 0;
+  margin-bottom: 0; }
+
+.table-view-cell > a:not(.btn) {
+  padding-left: 30px; }
+
+.send-messages .icon-cam {
+  float: left;
+  width: 25px;
+  height: 18px;
+  margin: 12px 10px 0 0; }
+.send-messages .write-message-input {
+  float: left;
+  width: 218px; }
+.send-messages a.button_send {
+  float: right;
+  margin-top: 12px;
+  font-weight: 700;
+  color: #007aff;
+  font-size: 16px; }
+.send-messages a.disabled {
+  pointer-events: none;
+  cursor: default;
+  color: #949499; }
+
+.context-menu {
+  position: absolute;
+  top: 43px;
+  right: 0px;
+  z-index: 999;
+  width: 70px;
+  height: 30px;
+  background-color: rgba(248, 248, 248, 0.97);
+  border-left: 1px solid #c7c7c7;
+  border-bottom: 1px solid #c7c7c7;
+  border-radius: 0 0 0 100px; }
+  .context-menu .wheel {
+    margin: -31px 0 0 25px;
+    width: 28px;
+    height: 28px;
+    background: url("../img/wheel/icon_5090.svg");
+    background-size: 100%;
+    -webkit-animation: rotation 5s infinite linear; }
+  .context-menu p {
+    margin: 4px 0 0 21px;
+    font-size: 11px;
+    font-weight: bold;
+    color: black; }
+
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg); }
+
+  to {
+    -webkit-transform: rotate(360deg); } }
+
+/* 
+
+Små ændringer med høj grad af neutralitet - interfacet tager få valg på brugerens vegne.
+Prototypen reorganiserer informationen på skærmen for at højne læseoplevelsen.
+Dette gøres ved at øge skriftstørrelsen på tekstbeskederne og samtidig kun
+vise én besked af gangen.
+
+*/
+.proto-1 .send-bubble, .proto-1 .receive-bubble {
+  font-size: 20px;
+  line-height: 25px;
+  padding: 10px 13px;
+  opacity: .2; }
+  .proto-1 .send-bubble:last-child, .proto-1 .receive-bubble:last-child {
+    opacity: 1; }
