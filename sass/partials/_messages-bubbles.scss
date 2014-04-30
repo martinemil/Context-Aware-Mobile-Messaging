@@ -84,4 +84,15 @@
 			left: -7px;
 		}
 	}
+
+	// animations
+	.animate-in {
+		//transition: -webkit-transform 1s;
+		-webkit-animation: animate-in 0.6s;
+	}
+}
+
+@-webkit-keyframes animate-in {
+	from {-webkit-transform: translateY(100px);}
+	to {-webkit-transform: translateY(0px);}
 }
