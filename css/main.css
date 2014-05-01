@@ -1,239 +1,74 @@
-@charset "UTF-8";
-/* line 7, ../sass/modules/_inputs.scss */
-input[type="text"] {
-  height: 28px;
-  padding: 8px;
-  font-size: 14px;
-  border: 0px;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-}
-/* line 18, ../sass/modules/_inputs.scss */
-input[type="text"].write-message-input {
-  border: 1px solid #c7c7c7;
-  margin-top: 8px;
-}
-/* line 23, ../sass/modules/_inputs.scss */
-input[type="text"].form-search_input {
-  margin-bottom: 8px;
-  text-align: center;
-}
+/*
+Syntax error: File to import not found or unreadable: partials/proto-2.
+              Load paths:
+                /Users/martinandersen/Documents/Git/Context-Aware-Mobile-Messaging/sass
+                /Library/Ruby/Gems/2.0.0/gems/compass-0.12.3/frameworks/blueprint/stylesheets
+                /Library/Ruby/Gems/2.0.0/gems/compass-0.12.3/frameworks/compass/stylesheets
+                Compass::SpriteImporter
+        on line 15 of /Users/martinandersen/Documents/Git/Context-Aware-Mobile-Messaging/sass/main.scss
 
-/* line 5, ../sass/partials/_base.scss */
-.content {
-  padding-bottom: 44px;
-}
-
-/* line 3, ../sass/partials/_ratchet-modifications.scss */
-.bar {
-  background-color: rgba(248, 248, 248, 0.97);
-}
-/* line 7, ../sass/partials/_ratchet-modifications.scss */
-.bar a,
-.bar .btn {
-  color: #007aff;
-}
-/* line 12, ../sass/partials/_ratchet-modifications.scss */
-.bar .btn.pull-left {
-  margin-left: -2px;
-}
-/* line 16, ../sass/partials/_ratchet-modifications.scss */
-.bar .btn.pull-right {
-  margin-right: -2px;
-}
-
-/* line 3, ../sass/partials/_messages-bubbles.scss */
-.messages {
-  margin: 10px 15px;
-  padding: 0;
-}
-/* line 7, ../sass/partials/_messages-bubbles.scss */
-.messages li {
-  list-style: none;
-  clear: both;
-}
-/* line 11, ../sass/partials/_messages-bubbles.scss */
-.messages li:last-child {
-  margin-bottom: 25px;
-}
-/* line 16, ../sass/partials/_messages-bubbles.scss */
-.messages .time {
-  margin-bottom: 7px;
-  text-align: center;
-  color: #949499;
-  font-size: 11px;
-}
-/* line 25, ../sass/partials/_messages-bubbles.scss */
-.messages .bubble-message, .messages .send-bubble, .messages .receive-bubble {
-  position: relative;
-  margin-bottom: 10px;
-  max-width: 80%;
-  padding: 8px 13px;
-  border-radius: 20px;
-  font-size: 16px;
-  line-height: 20px;
-}
-/* line 37, ../sass/partials/_messages-bubbles.scss */
-.messages .bubble-message:after, .messages .send-bubble:after, .messages .receive-bubble:after {
-  position: absolute;
-  bottom: 2px;
-  width: 18px;
-  height: 13px;
-  content: "";
-  background-size: 100%;
-}
-/* line 50, ../sass/partials/_messages-bubbles.scss */
-.messages .send-bubble {
-  background: #007aff;
-  float: right;
-  color: #fff;
-}
-/* line 59, ../sass/partials/_messages-bubbles.scss */
-.messages .send-bubble:after {
-  background-image: url("../images/message-snippet_blue.svg");
-  right: -7px;
-}
-/* line 64, ../sass/partials/_messages-bubbles.scss */
-.messages .send-bubble:last-of-type:before {
-  position: absolute;
-  bottom: -20px;
-  right: 0;
-  content: "Leveret";
-  color: #949499;
-  font-size: 11px;
-  font-weight: bold;
-}
-/* line 77, ../sass/partials/_messages-bubbles.scss */
-.messages .receive-bubble {
-  background: #e5e5ea;
-  float: left;
-}
-/* line 82, ../sass/partials/_messages-bubbles.scss */
-.messages .receive-bubble:after {
-  background-image: url("../images/message-snippet_grey.svg");
-  left: -7px;
-}
-/* line 89, ../sass/partials/_messages-bubbles.scss */
-.messages .animate-in {
-  -webkit-animation: animate-in 0.6s;
-}
-
-@-webkit-keyframes animate-in {
-  /* line 96, ../sass/partials/_messages-bubbles.scss */
-  from {
-    -webkit-transform: translateY(100px);
-  }
-
-  /* line 97, ../sass/partials/_messages-bubbles.scss */
-  to {
-    -webkit-transform: translateY(0px);
-  }
-}
-
-/* line 3, ../sass/partials/_message-list.scss */
-.form-search {
-  padding: 8px;
-  padding-bottom: 0;
-  background-color: #c9c9ce;
-}
-
-/* line 9, ../sass/partials/_message-list.scss */
-.table-view {
-  border-top: 0;
-  border-bottom: 0;
-  margin-bottom: 0;
-}
-
-/* line 19, ../sass/partials/_message-list.scss */
-.table-view-cell > a:not(.btn) {
-  padding-left: 30px;
-}
-
-/* line 4, ../sass/partials/_messages-send.scss */
-.send-messages .icon-cam {
-  float: left;
-  width: 25px;
-  height: 18px;
-  margin: 12px 10px 0 0;
-}
-/* line 11, ../sass/partials/_messages-send.scss */
-.send-messages .write-message-input {
-  float: left;
-  width: 218px;
-}
-/* line 16, ../sass/partials/_messages-send.scss */
-.send-messages a.button_send {
-  float: right;
-  margin-top: 12px;
-  font-weight: 700;
-  color: #007aff;
-  font-size: 16px;
-}
-/* line 24, ../sass/partials/_messages-send.scss */
-.send-messages a.disabled {
-  pointer-events: none;
-  cursor: default;
-  color: #949499;
-}
-
-/* line 3, ../sass/partials/_context-menu.scss */
-.context-menu {
-  position: absolute;
-  top: 43px;
-  right: 0px;
-  z-index: 999;
-  width: 70px;
-  height: 30px;
-  background-color: rgba(248, 248, 248, 0.97);
-  border-left: 1px solid #c7c7c7;
-  border-bottom: 1px solid #c7c7c7;
-  border-radius: 0 0 0 100px;
-}
-/* line 18, ../sass/partials/_context-menu.scss */
-.context-menu .wheel {
-  margin: -31px 0 0 25px;
-  width: 28px;
-  height: 28px;
-  background: url("../images/wheel/icon_5090.svg");
-  background-size: 100%;
-  -webkit-animation: rotation 5s infinite linear;
-}
-/* line 30, ../sass/partials/_context-menu.scss */
-.context-menu p {
-  margin: 4px 0 0 21px;
-  font-size: 11px;
-  font-weight: bold;
-  color: black;
-}
-
-@-webkit-keyframes rotation {
-  /* line 40, ../sass/partials/_context-menu.scss */
-  from {
-    -webkit-transform: rotate(0deg);
-  }
-
-  /* line 41, ../sass/partials/_context-menu.scss */
-  to {
-    -webkit-transform: rotate(360deg);
-  }
-}
-
-/* 
-
-Små ændringer med høj grad af neutralitet - interfacet tager få valg på brugerens vegne.
-Prototypen reorganiserer informationen på skærmen for at højne læseoplevelsen.
-Dette gøres ved at øge skriftstørrelsen på tekstbeskederne og samtidig kun
-vise én besked af gangen.
-
+Backtrace:
+/Users/martinandersen/Documents/Git/Context-Aware-Mobile-Messaging/sass/main.scss:15
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/tree/import_node.rb:67:in `rescue in import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/tree/import_node.rb:45:in `import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/tree/import_node.rb:28:in `imported_file'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/tree/import_node.rb:37:in `css_import?'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:217:in `visit_import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:53:in `map'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:128:in `visit_root'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:7:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/tree/root_node.rb:20:in `render'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/engine.rb:315:in `_render'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/engine.rb:262:in `render'
+/Library/Ruby/Gems/2.0.0/gems/compass-0.12.3/lib/compass/compiler.rb:140:in `block (2 levels) in compile'
+/Library/Ruby/Gems/2.0.0/gems/compass-0.12.3/lib/compass/compiler.rb:126:in `timed'
+/Library/Ruby/Gems/2.0.0/gems/compass-0.12.3/lib/compass/compiler.rb:139:in `block in compile'
+/Library/Ruby/Gems/2.0.0/gems/compass-0.12.3/lib/compass/logger.rb:45:in `red'
+/Library/Ruby/Gems/2.0.0/gems/compass-0.12.3/lib/compass/compiler.rb:138:in `compile'
+/Library/Ruby/Gems/2.0.0/gems/compass-0.12.3/lib/compass/compiler.rb:118:in `compile_if_required'
+/Library/Ruby/Gems/2.0.0/gems/compass-0.12.3/lib/compass/compiler.rb:103:in `block (2 levels) in run'
+/Library/Ruby/Gems/2.0.0/gems/compass-0.12.3/lib/compass/compiler.rb:101:in `each'
+/Library/Ruby/Gems/2.0.0/gems/compass-0.12.3/lib/compass/compiler.rb:101:in `block in run'
+/Library/Ruby/Gems/2.0.0/gems/compass-0.12.3/lib/compass/compiler.rb:126:in `timed'
+/Library/Ruby/Gems/2.0.0/gems/compass-0.12.3/lib/compass/compiler.rb:100:in `run'
+/Library/Ruby/Gems/2.0.0/gems/compass-0.12.3/lib/compass/commands/watch_project.rb:147:in `recompile'
+/Library/Ruby/Gems/2.0.0/gems/fssm-0.2.10/lib/fssm/path.rb:73:in `call'
+/Library/Ruby/Gems/2.0.0/gems/fssm-0.2.10/lib/fssm/path.rb:73:in `run_callback'
+/Library/Ruby/Gems/2.0.0/gems/fssm-0.2.10/lib/fssm/path.rb:55:in `callback_action'
+/Library/Ruby/Gems/2.0.0/gems/fssm-0.2.10/lib/fssm/path.rb:35:in `update'
+/Library/Ruby/Gems/2.0.0/gems/fssm-0.2.10/lib/fssm/state/directory.rb:39:in `block in modified'
+/Library/Ruby/Gems/2.0.0/gems/fssm-0.2.10/lib/fssm/state/directory.rb:37:in `each'
+/Library/Ruby/Gems/2.0.0/gems/fssm-0.2.10/lib/fssm/state/directory.rb:37:in `modified'
+/Library/Ruby/Gems/2.0.0/gems/fssm-0.2.10/lib/fssm/state/directory.rb:18:in `refresh'
+/Library/Ruby/Gems/2.0.0/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:17:in `block (2 levels) in run'
+/Library/Ruby/Gems/2.0.0/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:17:in `each'
+/Library/Ruby/Gems/2.0.0/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:17:in `block in run'
+/Library/Ruby/Gems/2.0.0/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:15:in `loop'
+/Library/Ruby/Gems/2.0.0/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:15:in `run'
+/Library/Ruby/Gems/2.0.0/gems/fssm-0.2.10/lib/fssm/monitor.rb:26:in `run'
+/Library/Ruby/Gems/2.0.0/gems/fssm-0.2.10/lib/fssm.rb:70:in `monitor'
+/Library/Ruby/Gems/2.0.0/gems/compass-0.12.3/lib/compass/commands/watch_project.rb:87:in `perform'
+/Library/Ruby/Gems/2.0.0/gems/compass-0.12.3/lib/compass/commands/base.rb:18:in `execute'
+/Library/Ruby/Gems/2.0.0/gems/compass-0.12.3/lib/compass/commands/project_base.rb:19:in `execute'
+/Library/Ruby/Gems/2.0.0/gems/compass-0.12.3/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
+/Library/Ruby/Gems/2.0.0/gems/compass-0.12.3/lib/compass/exec/sub_command_ui.rb:15:in `run!'
+/Library/Ruby/Gems/2.0.0/gems/compass-0.12.3/bin/compass:30:in `block in <top (required)>'
+/Library/Ruby/Gems/2.0.0/gems/compass-0.12.3/bin/compass:44:in `call'
+/Library/Ruby/Gems/2.0.0/gems/compass-0.12.3/bin/compass:44:in `<top (required)>'
+/usr/bin/compass:23:in `load'
+/usr/bin/compass:23:in `<main>'
 */
-/* line 13, ../sass/partials/_proto-1.scss */
-.proto-1 .send-bubble, .proto-1 .receive-bubble {
-  font-size: 20px;
-  line-height: 25px;
-  padding: 10px 13px;
-  opacity: .2;
-}
-/* line 22, ../sass/partials/_proto-1.scss */
-.proto-1 .send-bubble:last-child, .proto-1 .receive-bubble:last-child {
-  opacity: 1;
-}
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: File to import not found or unreadable: partials/proto-2.\A               Load paths:\A                 /Users/martinandersen/Documents/Git/Context-Aware-Mobile-Messaging/sass\A                 /Library/Ruby/Gems/2.0.0/gems/compass-0.12.3/frameworks/blueprint/stylesheets\A                 /Library/Ruby/Gems/2.0.0/gems/compass-0.12.3/frameworks/compass/stylesheets\A                 Compass::SpriteImporter\A         on line 15 of /Users/martinandersen/Documents/Git/Context-Aware-Mobile-Messaging/sass/main.scss"; }
