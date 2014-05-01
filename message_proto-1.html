@@ -46,11 +46,11 @@
         <li class="send-bubble">Hej Lars. Hvad tid kommer du hjem i dag?</li>
         <li class="receive-bubble">Hej Lotte. Jeg tænker det bliver omkring kl. 17</li>
         <li class="send-bubble">Okay, sejt!</li>
-        <li class="receive-bubble">Har du forresten hørt at Christina har mistet sit job hos den lokale smed/blomsterbutik? De havde tilsyneladende ikke ressourcer til have hende som receptionist længere..</li>
+<!--         <li class="receive-bubble">Har du forresten hørt at Christina har mistet sit job hos den lokale smed/blomsterbutik? De havde tilsyneladende ikke ressourcer til have hende som receptionist længere..</li>
         
         <li class="time"><strong>i dag</strong> 12.32</li>
         <li class="send-bubble">Forfærdeligt! Det er mener du var ikke vel?! Så har hun jo ingen fremtid..</li>
-        <li class="receive-bubble">Nej, absolut ingen. Jeg er på grådens rand på hendes vegne. Ved knap nok hvor jeg skal gøre af mig selv.. Det er meget ubehageligt!</li>
+        <li class="receive-bubble">Nej, absolut ingen. Jeg er på grådens rand på hendes vegne. Ved knap nok hvor jeg skal gøre af mig selv.. Det er meget ubehageligt!</li> -->
       </ul>
     </div>    
 
@@ -58,7 +58,7 @@
     <div class="bar bar-standard bar-footer send-messages">
         <img class="icon-cam" src="img/ios-camera-icon.png" alt="camera" />
         <input class="write-message-input" type="text" placeholder="Tekstbesked">
-        <a class="button_send disabled">Send</a>
+        <a class="button_send disabled" onclick="sendMessage();">Send</a>
     </div>
     
     <script type="text/javascript">
@@ -76,6 +76,33 @@
       }
 
       checkInputValue();
+
+
+      // Send messages
+      var msgContainer = document.querySelector('.messages');
+
+      function sendMessage() {
+        var textInputValue = textInput.value; // Get value from input field
+        var newMsgLi = document.createElement('li'); // Create new li for new message
+
+        newMsgLi.className = 'send-bubble animate-in'; // Add class name to message li
+        newMsgLi.innerHTML = textInputValue; // Input text message to message li
+        msgContainer.appendChild(newMsgLi); // Append message li to message container
+
+        textInput.value = ''; // Clear value for input field
+        setTimeout(function() { scrollToBottom(); }, 600);
+      }
+
+      // Scroll to bottom
+      function scrollToBottom() {
+        var contentDiv = document.querySelector('.content');
+        contentDiv.scrollTop = contentDiv.scrollHeight;
+      }
+
+      // 
+      checkInputValue();
+      scrollToBottom();
+
     </script>
 
   </body>
