@@ -24,14 +24,14 @@ Brugeren har stadig magten.
 			margin-top: 10px;
 			text-align: center;
 			font-size: 12px;
+			font-weight: bold;
 		}
 
-		.left-container {
+		.message-container {
 			float: left;
 			width: 50%;
 			height: 100%;
-			border-right: 1px solid $grey;
-			background: white;
+			background: $light-grey;
 
 			.prewritten-message {
 				// Position
@@ -63,10 +63,11 @@ Brugeren har stadig magten.
 			}
 		}
 
-		.right-container {
+		.audio-container {
 			float: left;
 			width: 50%;
 			height: 100%;
+			border-right: 1px solid #ddd;
 			background: $light-grey;
 
 			.microphone-input {
