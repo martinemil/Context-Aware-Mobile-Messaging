@@ -41,7 +41,7 @@
       <h1 class="title">Mor</h1>
     </header>
 
-    <div class="bar bar-footer bar-footer-proto-2 bar-standard  send-messages remove-padding">
+    <div class="bar bar-footer bar-footer-proto-2 bar-standard send-messages remove-padding">
         <div class="add-padding">
           <img class="icon-cam" src="img/ios-camera-icon.png" alt="camera" />
           <input class="write-message-input" type="text" placeholder="Tekstbesked">
@@ -108,18 +108,21 @@
 
       // Send prewritten message
 
+      var barFooter = document.querySelector('.bar-footer');
+
       function sendPrewrittenMessage() {
         var newMsgLi = document.createElement('li'); // Create new li for new message
         var cycleIcon = document.createElement('div'); // Create new div for cycle icon
         
         newMsgLi.innerHTML = "Cykler lige nu. Jeg skriver tilbage om lidt."; // Input text message to message li
 
-        newMsgLi.className = 'send-bubble animate-in cycle-icon'; // Add class name to message li
+        newMsgLi.className = 'send-bubble animate-in'; // Add class name to message li
         cycleIcon.className = 'cycle-icon'; // Add class name to cycle icon
         newMsgLi.appendChild(cycleIcon);
         msgContainer.appendChild(newMsgLi); // Append message li to message container
 
         textInput.value = ''; // Clear value for input field
+        barFooter.className = 'bar bar-footer bar-footer-proto-2 bar-standard send-messages remove-padding animate-out';
         setTimeout(function() { scrollToBottom(); }, 600);
       }
 

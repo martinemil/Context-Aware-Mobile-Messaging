@@ -9,17 +9,22 @@ Brugeren har stadig magten.
 
 */
 
-
-.bar-footer-proto-2 {
-	
-	height: auto;
-
+.proto-2 {
 	.cycle-icon {
 		position: absolute;
-		width: 10px;
-		height: 10px;
-		background: red;
+		top: -13px;
+		left: -13px;
+		width: 27px;
+		height: 27px;
+		border-radius: 50%;
+		background: #fff url('../img/wheel/icon_5090_blue.svg') no-repeat;
+		background-size: 80%;
+		background-position: center;
 	}
+}
+
+.bar-footer-proto-2 {
+	height: auto;
 
 	.additional_input {
 		float: left;
@@ -102,4 +107,15 @@ Brugeren har stadig magten.
 // add padding
 .add-padding {
 	padding: 0 10px;
+}
+
+// animate-out
+.animate-out {
+	-webkit-animation: animate-out .6s;
+	-webkit-transform: translateY(150px);
+}
+
+@-webkit-keyframes animate-out {
+	from {-webkit-transform: translateY(0px);}
+	to {-webkit-transform: translateY(150px);}
 }
