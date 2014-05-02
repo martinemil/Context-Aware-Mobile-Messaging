@@ -40,6 +40,7 @@ Brugeren har stadig magten.
 		}
 
 		.message-container {
+			position: relative;
 			float: left;
 			width: 50%;
 			height: 100%;
@@ -75,7 +76,10 @@ Brugeren har stadig magten.
 			}
 
 			.record-timer {
-				margin-top: 55px;
+				position: absolute;
+				opacity: 0;
+				top: 62px;
+				left: 43px;
 				font-size: 38px;
 				text-align: center;
 			}
@@ -145,6 +149,11 @@ Brugeren har stadig magten.
 	-webkit-animation: animate-fadeout 1s;
 }
 
+.animate-timer-in {
+	opacity: 1;
+	-webkit-animation: animate-timer-in 4s;
+}
+
 @-webkit-keyframes animate-out {
 	from {-webkit-transform: translateY(0px);}
 	to {-webkit-transform: translateY(150px);}
@@ -164,4 +173,9 @@ Brugeren har stadig magten.
 @-webkit-keyframes animate-fadeout {
 	from {opacity: 1;}
 	to {opacity: 0;}
+}
+
+@-webkit-keyframes animate-timer-in {
+	from {opacity: 0;}
+	to {opacity: 1;}
 }

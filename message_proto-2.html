@@ -133,10 +133,12 @@
         var microphoneInput = document.querySelector('.microphone-input');
         var messageContainer = document.querySelector('.message-container');
         var preWrittenDescription = document.querySelector('.prewritten-description');
+        var recordTimer = document.querySelector('.record-timer');
 
         preWrittenMessage.className = 'prewritten-message animate-premessage-out'; // Add class to preWrittenMessage
         microphoneInput.className = 'microphone-input animate-pulse' // Add class to microphoneInput
         preWrittenDescription.className ='prewritten-description animate-fadeout' // Add class name to preWrittenDescription
+        recordTimer.className ='record-timer animate-timer-in' // Add class name to recordTimer
 
         // var timerDiv = document.createElement('div') // Create timerDiv
         // timerDiv.className = 'record-timer';
