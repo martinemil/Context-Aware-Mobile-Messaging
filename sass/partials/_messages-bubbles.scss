@@ -92,6 +92,6 @@
 }
 
 @-webkit-keyframes animate-in {
-	from {-webkit-transform: translateY(100px);}
-	to {-webkit-transform: translateY(0px);}
+	from {-webkit-transform: translateY(100px); opacity: .2;}
+	to {-webkit-transform: translateY(0px); opacity: 1;}
 }
