@@ -19,13 +19,11 @@
     <link href="css/main.css" rel="stylesheet">
 
     <!-- Include the compiled Ratchet JS -->
-    
     <script src="ratchet/js/ratchet.min.js"></script>
-    
+
   </head>
   <body>
 
-    <!-- Make sure all your bars are the first things in your <body> -->
     <header class="bar bar-nav">
       <button class="btn btn-link btn-nav pull-left">
         Rediger
@@ -36,7 +34,52 @@
       <h1 class="title">Beskeder</h1>
     </header>
 
-    <!-- New message modal window -->
+    <div class="content">
+      <form class="form-search">
+        <input type="text" class="form-search_input" placeholder="Søg">
+      </form>
+
+      <ul class="table-view">
+        <li class="table-view-cell">
+          <a class="navigate-right" href="message_standard.html" data-transition="slide-in">
+              Lars
+              <p>Lorem ipsum standard dolor sit amet, cons adipisicing elit, sed do.</p>
+          </a>
+        </li>
+        <li class="table-view-cell">
+          <a class="navigate-right" href="message_proto-1.html" data-transition="slide-in">
+              Peter
+              <p>Lorem ipsum prototype 1 dolor sit amet, cons adipisicing elit, sed do.</p>
+          </a>
+        </li>
+        <li class="table-view-cell">
+          <a class="navigate-right" href="message_proto-2.html" data-transition="slide-in">
+              Mor
+              <p>Lorem ipsum prototype 2 dolor sit amet, cons adipisicing elit, sed do.</p>
+          </a>
+        </li>
+        <li class="table-view-cell">
+          <a class="navigate-right" href="message_proto-3.html" data-transition="slide-in">
+              Mor
+              <p>Lorem ipsum prototype 3 dolor sit amet, cons adipisicing elit, sed do.</p>
+          </a>
+        </li>
+        <li class="table-view-cell">
+          <a class="navigate-right" href="#">
+              Mor
+              <p>Lorem ipsum dolor sit amet, cons adipisicing elit, sed do.</p>
+          </a>
+        </li>
+        <li class="table-view-cell">
+          <a class="navigate-right" href="#">
+              Mor
+              <p>Lorem ipsum dolor sit amet, cons adipisicing elit, sed do.</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Modal window for new message -->
     <div id="newMessageModal" class="modal">
       <header class="bar bar-nav">
         <a href="#newMessageModal">
@@ -51,53 +94,6 @@
       <div class="content">
         <p class="content-padded">Phasellus non ipsum et nisi sagittis condimentum. Donec at elementum orci. Vestibulum velit dolor, tincidunt eget risus vitae, venenatis ultricies lorem. Integer feugiat magna ac viverra rhoncus. Curabitur ultrices vulputate felis vel consectetur. Ut varius orci eu urna suscipit pharetra. Pellentesque scelerisque lorem ac ligula pharetra pellentesque.</p>
       </div>
-    </div>
-
-    <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
-    <div class="content">
-      <form class="form-search">
-        <input type="text" class="form-search_input" placeholder="Søg">
-      </form>
-
-      <ul class="table-view">
-        <li class="table-view-cell">
-          <a class="navigate-right" href="message_standard.html" data-transition="fade">
-              Lars
-              <p>Lorem ipsum standard dolor sit amet, cons adipisicing elit, sed do.</p>
-          </a>
-        </li>
-        <li class="table-view-cell">
-          <a class="navigate-right" href="message_proto-1.html">
-              Peter
-              <p>Lorem ipsum prototype 1 dolor sit amet, cons adipisicing elit, sed do.</p>
-          </a>
-        </li>
-        <li class="table-view-cell">
-          <a class="navigate-right" href="message_proto-2.html">
-              Mor
-              <p>Lorem ipsum prototype 2 dolor sit amet, cons adipisicing elit, sed do.</p>
-          </a>
-        </li>
-        <li class="table-view-cell">
-          <a class="navigate-right" href="message_proto-3.html">
-              Mor
-              <p>Lorem ipsum prototype 3 dolor sit amet, cons adipisicing elit, sed do.</p>
-          </a>
-        </li>
-        <li class="table-view-cell">
-          <a class="navigate-right">
-              Mor
-              <p>Lorem ipsum dolor sit amet, cons adipisicing elit, sed do.</p>
-          </a>
-        </li>
-        <li class="table-view-cell">
-          <a class="navigate-right">
-              Mor
-              <p>Lorem ipsum dolor sit amet, cons adipisicing elit, sed do.</p>
-          </a>
-        </li>
-      </ul>
-
     </div>
   </body>
 </html>
