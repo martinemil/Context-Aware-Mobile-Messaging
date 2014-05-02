@@ -23,12 +23,11 @@
     <script src="ratchet/js/ratchet.min.js"></script>
      -->
   </head>
-  <body class="proto-2">
+  <body>
 
-    <!-- Make sure all your bars are the first things in your <body> -->
     <header class="bar bar-nav">
       <!-- <a class="icon icon-left-nav pull-left" href="index.html">Beskeder</a> -->
-      <a href="index.html">
+      <a href="index.html" data-transition="slide">
         <button class="btn btn-link btn-nav pull-left">
           <span class="icon icon-left-nav"></span>
           Beskeder
@@ -39,27 +38,10 @@
         </div>
         <p>Cykler</p>
       </div>
-      <h1 class="title">Lars</h1>
+      <h1 class="title">Mor</h1>
     </header>
 
-    <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
-    <div class="content">
-      <ul class="messages">
-        <li class="time"><strong>i dag</strong> 11.08</li>
-        <li class="send-bubble">Hej Lars. Hvad tid kommer du hjem i dag?</li>
-        <li class="receive-bubble">Hej Lotte. Jeg tænker det bliver omkring kl. 17.</li>
-        
-        <!--    
-        <li class="receive-bubble">Har du forresten hørt at Christina har mistet sit job hos den lokale smed/blomsterbutik? De havde tilsyneladende ikke ressourcer til have hende som receptionist længere..</li>
-        <li class="time"><strong>i dag</strong> 12.32</li>
-        <li class="send-bubble">Forfærdeligt! Det er mener du var ikke vel?! Så har hun jo ingen fremtid..</li>
-        <li class="receive-bubble">Nej, absolut ingen. Jeg er på grådens rand på hendes vegne. Ved knap nok hvor jeg skal gøre af mig selv.. Det er meget ubehageligt!</li>
-        -->
-      </ul>
-    </div>    
-
-    <!-- Icons in standard bar fixed to the bottom of the screen -->
-    <div class="bar bar-standard bar-footer send-messages remove-padding">
+    <div class="bar bar-footer bar-footer-proto-2 bar-standard  send-messages remove-padding">
         <div class="add-padding">
           <img class="icon-cam" src="img/ios-camera-icon.png" alt="camera" />
           <input class="write-message-input" type="text" placeholder="Tekstbesked">
@@ -77,7 +59,22 @@
           </div>
         </div>
     </div>
-    
+
+    <div class="content proto-2">
+      <ul class="messages">
+        <li class="time"><strong>i dag</strong> 11.08</li>
+        <li class="send-bubble">Hej Mor. Hvad tid kommer du hjem i dag?</li>
+        <li class="receive-bubble">Hej Lotte. Jeg tænker det bliver omkring kl. 17.</li>
+        
+        <!--    
+        <li class="receive-bubble">Har du forresten hørt at Christina har mistet sit job hos den lokale smed/blomsterbutik? De havde tilsyneladende ikke ressourcer til have hende som receptionist længere..</li>
+        <li class="time"><strong>i dag</strong> 12.32</li>
+        <li class="send-bubble">Forfærdeligt! Det er mener du var ikke vel?! Så har hun jo ingen fremtid..</li>
+        <li class="receive-bubble">Nej, absolut ingen. Jeg er på grådens rand på hendes vegne. Ved knap nok hvor jeg skal gøre af mig selv.. Det er meget ubehageligt!</li>
+        -->
+      </ul>
+    </div>    
+
     <script type="text/javascript">
 
       var textInput = document.querySelector('.write-message-input');
