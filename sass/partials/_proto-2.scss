@@ -125,7 +125,16 @@ Brugeren har stadig magten.
 	-webkit-transform: translateY(150px);
 }
 
+.animate-premessage-out {
+	-webkit-animation: animate-premessage-out 1s;
+}
+
 @-webkit-keyframes animate-out {
 	from {-webkit-transform: translateY(0px);}
 	to {-webkit-transform: translateY(150px);}
+}
+
+@-webkit-keyframes animate-premessage-out {
+	from {-webkit-transform: translateX(0px);}
+	to {-webkit-transform: translateX(150px);}
 }

@@ -48,7 +48,7 @@
           <a class="button_send disabled" onclick="sendMessage();">Send</a>
         </div>
         <div class="additional_input">
-          <div class="audio-container">
+          <div class="audio-container" onclick="recordMessage();">
             <div class="microphone-input">
             </div>
             <p>Talebesked</p>
@@ -126,7 +126,13 @@
         contentDiv.scrollTop = contentDiv.scrollHeight;
       }
 
-      // 
+      function recordMessage() {
+        var preWrittenMessage = document.querySelector('.prewritten-message');
+        preWrittenMessage.className = 'prewritten-message animate-premessage-out';
+      }
+
+      
+      // Run functions
       checkInputValue();
       scrollToBottom();
 
