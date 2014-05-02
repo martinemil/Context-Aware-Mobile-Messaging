@@ -25,10 +25,9 @@
   </head>
   <body>
 
-    <!-- Make sure all your bars are the first things in your <body> -->
     <header class="bar bar-nav">
       <!-- <a class="icon icon-left-nav pull-left" href="index.html">Beskeder</a> -->
-      <a href="index.html" data-transition="fade">
+      <a href="index.html" data-transition="slide">
         <button class="btn btn-link btn-nav pull-left">
           <span class="icon icon-left-nav"></span>
           Beskeder
@@ -38,7 +37,12 @@
       <h1 class="title">Lars</h1>
     </header>
 
-    <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
+    <div class="bar bar-standard bar-footer send-messages">
+        <img class="icon-cam" src="img/ios-camera-icon.png" alt="camera" />
+        <input class="write-message-input" type="text" placeholder="Tekstbesked">
+        <a class="button_send disabled" href="#" onclick="sendMessage();return false;">Send</a>    
+    </div>
+
     <div class="content">
       <ul class="messages">
         <li class="time"><strong>i dag</strong> 11.08</li>
@@ -55,13 +59,6 @@
         <li class="send-bubble">Nej da! Godt du kommer hjem kl. 17.</li> -->
       </ul>
     </div>    
-
-    <!-- Icons in standard bar fixed to the bottom of the screen -->
-    <div class="bar bar-standard bar-footer send-messages">
-        <img class="icon-cam" src="img/ios-camera-icon.png" alt="camera" />
-        <input class="write-message-input" type="text" placeholder="Tekstbesked">
-        <a class="button_send disabled" href="#" onclick="sendMessage();return false;">Send</a>    
-    </div>
     
     <script type="text/javascript">
 
