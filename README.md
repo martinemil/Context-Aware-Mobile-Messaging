@@ -1,4 +1,4 @@
 Context-Aware-Mobile-Messaging
 ==============================
 
-Context Aware Mobile Messaging - bachelor project at the IT-University of Copenhagen, Denmark.
+Context-aware mobile messaging app for iOS - bachelor project at the IT-University of Copenhagen, Denmark.
