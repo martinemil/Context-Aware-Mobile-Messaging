@@ -3,7 +3,7 @@
 .context-menu {
 	// set position
 	position: absolute;
-	top: 43px;
+	top: 44px;
 	right: 0px;
 	z-index: 999;
 	// size
@@ -14,6 +14,9 @@
 	border-left: 1px solid $grey;
 	border-bottom: 1px solid $grey;
 	border-radius: 0 0 0 100px;
+	
+	// -webkit-box-shadow: 0 0px  1px rgba(0,0,0,.85);
+	// box-shadow: 0 0px 1px rgba(0,0,0,.85);
 
 	.wheel {
 		margin: -31px 0 0 25px;
