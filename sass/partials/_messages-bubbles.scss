@@ -51,10 +51,9 @@
 		@extend .bubble-message;
 		// Fallback background
 		background: $blue;
-		//@include gradient($message-green-top, $message-green);
-		float: right;
-		// font
 		color: #fff;
+
+		float: right;
 
 		&:after {
 			background-image: url('../img/message-snippet_blue.svg');
@@ -84,12 +83,12 @@
 			left: -7px;
 		}
 	}
+}
 
-	// animations
-	.animate-in {
-		//transition: -webkit-transform 1s;
-		-webkit-animation: animate-in 0.6s;
-	}
+// animations
+.animate-in {
+	//transition: -webkit-transform 1s;
+	-webkit-animation: animate-in 0.6s;
 }
 
 @-webkit-keyframes animate-in {
