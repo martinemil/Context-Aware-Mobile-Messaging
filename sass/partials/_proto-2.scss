@@ -71,7 +71,13 @@ Brugeren har stadig magten.
 						background-size: 100%;
 						background-image: url('../img/message-snippet_blue.svg');
 						right: -7px;
-					}	
+					}
+			}
+
+			.record-timer {
+				margin-top: 55px;
+				font-size: 38px;
+				text-align: center;
 			}
 		}
 
@@ -134,6 +140,11 @@ Brugeren har stadig magten.
 	-webkit-animation: animate-pulse 2s infinite;
 }
 
+.animate-fadeout {
+	opacity: 0;
+	-webkit-animation: animate-fadeout 1s;
+}
+
 @-webkit-keyframes animate-out {
 	from {-webkit-transform: translateY(0px);}
 	to {-webkit-transform: translateY(150px);}
@@ -148,4 +159,9 @@ Brugeren har stadig magten.
 	0% {-webkit-transform: scale(1);}
 	50%  {-webkit-transform: scale(.85);}
 	100% {-webkit-transform: scale(1);}
+}
+
+@-webkit-keyframes animate-fadeout {
+	from {opacity: 1;}
+	to {opacity: 0;}
 }
