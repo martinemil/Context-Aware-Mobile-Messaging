@@ -77,7 +77,6 @@ Brugeren har stadig magten.
 
 			.record-timer {
 				position: absolute;
-				opacity: 0;
 				top: 62px;
 				left: 43px;
 				font-size: 38px;
@@ -127,6 +126,11 @@ Brugeren har stadig magten.
 // hide
 .hide {
 	display: none;
+}
+
+// opacity
+.full-opacity {
+	opacity: 0;
 }
 
 // animate-out
