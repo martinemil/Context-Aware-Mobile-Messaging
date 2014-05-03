@@ -21,7 +21,7 @@
         The "device" permission is required for the 'deviceready' event.
     -->
     <feature name="http://api.phonegap.com/1.0/device" />
-
+    
     <!--
         If you do not want any permissions to be added to your app, add the
         following tag to your config.xml; you will still have the INTERNET
@@ -42,12 +42,15 @@
     <preference name="exit-on-suspend"            value="false" />          <!-- ios: if set to true, app will terminate when home button is pressed -->
     <preference name="show-splash-screen-spinner" value="false" />          <!-- ios: if set to false, the spinner won't appear on the splash screen during app loading -->
     <preference name="auto-hide-splash-screen"    value="true" />           <!-- ios: if set to false, the splash screen must be hidden using a JavaScript API -->
+    
+    <preference name="DisallowOverscroll"         value="true" />
 
-    <preference name="HideKeyboardFormAccessoryBar" value="true" />         <!-- plugin: hide accessory bare over keyboard --> 
+    <preference name="HideKeyboardFormAccessoryBar" value="true" />         <!-- plugin: hide accessory bare over keyboard -->
+    <preference name="KeyboardShrinksView"          value="false" />        <!-- plugin: shrink webView when keyboard is active -->
 
     <!-- Plugins -->
     <gap:plugin name="org.apache.cordova.labs.keyboard" version="0.1.2" />  <!-- https://github.com/apache/cordova-plugins/tree/master/keyboard -->
-    <gap:plugin name="com.phonegap.plugins.pushplugin" version="2.1.1" />
+    <gap:plugin name="com.phonegap.plugins.pushplugin"  version="2.1.1" />  <!-- ? -->
 
     <!-- Define app icon for each platform. -->
     <icon src="icon.png" />
