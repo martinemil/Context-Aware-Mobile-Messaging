@@ -58,47 +58,7 @@
       </ul>
     </div>    
     
-    <script type="text/javascript">
-
-      // Active/inactive send button
-      var textInput = document.querySelector('.write-message-input');
-      var btnSend = document.querySelector('.button_send');
-
-      function checkInputValue() {
-        if (textInput.value) {
-          btnSend.classList.remove('disabled'); // Remove disabled class if input has value
-        } else {
-          btnSend.classList.add('disabled'); // Add disabled class if input does not have value
-        }
-        window.setTimeout("checkInputValue();", 100);
-      }
-
-      // Send messages
-      var msgContainer = document.querySelector('.messages');
-
-      function sendMessage() {
-        var textInputValue = textInput.value; // Get value from input field
-        var newMsgLi = document.createElement('li'); // Create new li for new message
-
-        newMsgLi.className = 'send-bubble animate-in'; // Add class name to message li
-        newMsgLi.innerHTML = textInputValue; // Input text message to message li
-        msgContainer.appendChild(newMsgLi); // Append message li to message container
-
-        textInput.value = ''; // Clear value for input field
-        setTimeout(function() { scrollToBottom(); }, 600);
-      }
-
-      // Scroll to bottom
-      function scrollToBottom() {
-        var contentDiv = document.querySelector('.content');
-        contentDiv.scrollTop = contentDiv.scrollHeight;
-      }
-
-      // 
-      checkInputValue();
-      scrollToBottom();
-
-    </script>
+    <script src="js/main.js"></script>
 
   </body>
 </html>
