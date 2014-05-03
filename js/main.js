@@ -19,9 +19,12 @@ var msgContainer = document.querySelector('.messages');
 function sendMessage() {
   var textInputValue = textInput.value; // Get value from input field
   var newMsgLi = document.createElement('li'); // Create new li for new message
+  var cycleIcon = document.createElement('div'); // Create new div for cycle icon
 
-  newMsgLi.className = 'send-bubble animate-in'; // Add class name to message li
+  newMsgLi.className = 'send-bubble animate-in extra-margin'; // Add class name to message li
   newMsgLi.innerHTML = textInputValue; // Input text message to message li
+  cycleIcon.className = 'cycle-icon'; // Add class name to cycle icon
+  newMsgLi.appendChild(cycleIcon);
   msgContainer.appendChild(newMsgLi); // Append message li to message container
 
   textInput.value = ''; // Clear value for input field
