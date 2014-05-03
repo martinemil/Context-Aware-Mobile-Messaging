@@ -1,4 +1,3 @@
-
 var textInput = document.querySelector('.write-message-input');
 var btnSend = document.querySelector('.button_send');
 
@@ -19,9 +18,12 @@ var msgContainer = document.querySelector('.messages');
 function sendMessage() {
   var textInputValue = textInput.value; // Get value from input field
   var newMsgLi = document.createElement('li'); // Create new li for new message
+  var cycleIcon = document.createElement('div'); // Create new div for cycle icon
 
-  newMsgLi.className = 'send-bubble animate-in'; // Add class name to message li
+  newMsgLi.className = 'send-bubble animate-in extra-margin'; // Add class name to message li
   newMsgLi.innerHTML = textInputValue; // Input text message to message li
+  cycleIcon.className = 'cycle-icon'; // Add class name to cycle icon
+  newMsgLi.appendChild(cycleIcon);
   msgContainer.appendChild(newMsgLi); // Append message li to message container
 
   textInput.value = ''; // Clear value for input field
@@ -65,6 +67,7 @@ function recordMessage() {
   var preWrittenDescription = document.querySelector('.prewritten-description');
   var recordTimer = document.querySelector('.record-timer');
   var recordDescription = document.querySelector('.record-description');
+  var audioContainer = document.querySelector('.audio-container');
 
   if (recordActive == 0) {
     timerInSeconds();
@@ -73,6 +76,7 @@ function recordMessage() {
     microphoneInput.className = 'microphone-input animate-pulse' // Add class to microphoneInput
     preWrittenDescription.className ='prewritten-description animate-fadeout' // Add class name to preWrittenDescription
     recordTimer.className ='record-timer animate-timer-in' // Add class name to recordTimer
+    audioContainer.className ='audio-container remove-border'; // Add class to audioContainer
 
     recordDescription.innerHTML = 'Tryk igen for at sende'
 

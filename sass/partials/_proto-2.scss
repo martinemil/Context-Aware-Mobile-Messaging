@@ -24,10 +24,16 @@ Brugeren har stadig magten.
 		left: -13px;
 		width: 27px;
 		height: 27px;
+		//border: 1px solid $blue;
 		border-radius: 50%;
-		background: #fff url('../img/wheel/icon_5090_blue.svg') no-repeat;
-		background-size: 80%;
-		background-position: center;
+		background: #fff url('../img/bike/icon_536_blue.svg') no-repeat;
+		background-size: 78%;
+		background-position: 0 7px;
+	}
+
+	.cycle-icon-red {
+		@extend .cycle-icon;
+		background-image: url('../img/bike/icon_536_red.svg');
 	}
 
 	.play-icon {
@@ -144,6 +150,11 @@ Brugeren har stadig magten.
 // opacity
 .full-opacity {
 	opacity: 0;
+}
+
+// remove border
+.remove-border {
+	border: none!important;
 }
 
 // animate-out
