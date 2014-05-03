@@ -29,6 +29,15 @@ Brugeren har stadig magten.
 		background-size: 80%;
 		background-position: center;
 	}
+
+	.play-icon {
+		float: left;
+		width: 15px;
+		height: 15px;
+		margin: 2px 4px 0 0;
+		background: url('../img/play-icon.svg') no-repeat;
+		background-size: 100%;
+	}
 }
 
 .bar-footer-proto-2 {
