@@ -10,6 +10,14 @@ Brugeren har stadig magten.
 */
 
 .proto-2 {
+	.bubble-red {
+		background-color: $red;
+
+		&:after {
+			background-image: url('../img/message-snippet_red.svg');
+		}
+	}
+
 	.cycle-icon {
 		position: absolute;
 		top: -13px;
@@ -96,7 +104,7 @@ Brugeren har stadig magten.
 				width: 80px;
 				height: 80px;
 				border-radius: 50%;
-				background: #E73A38 url('../img/microphone/ios7-mic_w.svg') center no-repeat;
+				background: $red url('../img/microphone/ios7-mic_w.svg') center no-repeat;
 				background-size: 55%;
 
 			}
@@ -140,6 +148,10 @@ Brugeren har stadig magten.
 	-webkit-animation: animate-premessage-out 1s;
 }
 
+.animate-premessage-in {
+	-webkit-animation: animate-premessage-in 1s
+}
+
 .animate-pulse {
 	-webkit-animation: animate-pulse 1s infinite;
 }
@@ -147,11 +159,6 @@ Brugeren har stadig magten.
 .animate-fadeout {
 	opacity: 0;
 	-webkit-animation: animate-fadeout 1s;
-}
-
-.animate-timer-in {
-	opacity: 1;
-	-webkit-animation: animate-timer-in 4s;
 }
 
 @-webkit-keyframes animate-out {

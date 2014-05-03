@@ -128,8 +128,10 @@
         contentDiv.scrollTop = contentDiv.scrollHeight;
       }
 
+      // Record function
+      var recordActive = 0;
+
       function recordMessage() {
-        timerInSeconds();
         var preWrittenMessage = document.querySelector('.prewritten-message');
         var microphoneInput = document.querySelector('.microphone-input');
         var messageContainer = document.querySelector('.message-container');
@@ -137,12 +139,36 @@
         var recordTimer = document.querySelector('.record-timer');
         var recordDescription = document.querySelector('.record-description');
 
-        preWrittenMessage.className = 'prewritten-message animate-premessage-out'; // Add class to preWrittenMessage
-        microphoneInput.className = 'microphone-input animate-pulse' // Add class to microphoneInput
-        preWrittenDescription.className ='prewritten-description animate-fadeout' // Add class name to preWrittenDescription
-        recordTimer.className ='record-timer animate-timer-in' // Add class name to recordTimer
+        if (recordActive == 0) {
+          timerInSeconds();
 
-        recordDescription.innerHTML = ''
+          preWrittenMessage.className = 'prewritten-message animate-premessage-out'; // Add class to preWrittenMessage
+          microphoneInput.className = 'microphone-input animate-pulse' // Add class to microphoneInput
+          preWrittenDescription.className ='prewritten-description animate-fadeout' // Add class name to preWrittenDescription
+          recordTimer.className ='record-timer animate-timer-in' // Add class name to recordTimer
+
+          recordDescription.innerHTML = 'Tryk igen for at sende'
+
+          recordActive = 1;
+        } else {
+          microphoneInput.className = 'microphone-input';
+          recordTimer.className ='record-timer animate-fadeout'
+          recordDescription.innerHTML = 'Talebesked'
+
+          recordActive = 0;
+
+          // Add recorded message
+          var newMsgLi = document.createElement('li'); // Create new li for new message
+          var cycleIcon = document.createElement('div'); // Create new div for cycle icon
+          
+          newMsgLi.innerHTML = "Talebesked"; // Input text message to message li
+
+          newMsgLi.className = 'send-bubble bubble-red animate-in extra-margin'; // Add class name to message li
+          cycleIcon.className = 'cycle-icon-red'; // Add class name to cycle icon
+          newMsgLi.appendChild(cycleIcon);
+          msgContainer.appendChild(newMsgLi); // Append message li to message container
+          barFooter.className = 'bar bar-footer bar-footer-proto-2 bar-standard send-messages remove-padding animate-out';
+        }
       }
 
       // Timer function
