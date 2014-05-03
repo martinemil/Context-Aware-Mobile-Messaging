@@ -152,6 +152,11 @@ Brugeren har stadig magten.
 	opacity: 0;
 }
 
+// remove border
+.remove-border {
+	border: none!important;
+}
+
 // animate-out
 .animate-out {
 	-webkit-animation: animate-out .6s;

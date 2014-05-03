@@ -1,4 +1,3 @@
-
 var textInput = document.querySelector('.write-message-input');
 var btnSend = document.querySelector('.button_send');
 
@@ -68,6 +67,7 @@ function recordMessage() {
   var preWrittenDescription = document.querySelector('.prewritten-description');
   var recordTimer = document.querySelector('.record-timer');
   var recordDescription = document.querySelector('.record-description');
+  var audioContainer = document.querySelector('.audio-container');
 
   if (recordActive == 0) {
     timerInSeconds();
@@ -76,6 +76,7 @@ function recordMessage() {
     microphoneInput.className = 'microphone-input animate-pulse' // Add class to microphoneInput
     preWrittenDescription.className ='prewritten-description animate-fadeout' // Add class name to preWrittenDescription
     recordTimer.className ='record-timer animate-timer-in' // Add class name to recordTimer
+    audioContainer.className ='audio-container remove-border'; // Add class to audioContainer
 
     recordDescription.innerHTML = 'Tryk igen for at sende'
 
