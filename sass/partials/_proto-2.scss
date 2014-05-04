@@ -144,6 +144,11 @@ Brugeren har stadig magten.
 	border: none!important;
 }
 
+// fixed-height
+.hide-additional-inputs {
+	height: 44px;
+}
+
 // animate-out
 .animate-out {
 	-webkit-animation: animate-out .6s;

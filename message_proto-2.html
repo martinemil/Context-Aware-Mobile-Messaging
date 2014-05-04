@@ -43,7 +43,7 @@
     <div class="bar bar-footer bar-footer-proto-2 bar-standard send-messages remove-padding">
         <div class="add-padding">
           <img class="icon-cam" src="img/ios-camera-icon.png" alt="camera" />
-          <input class="write-message-input" type="text" placeholder="Tekstbesked">
+          <input class="write-message-input" type="text" placeholder="Tekstbesked" onfocus="hideAdditionalInputs();" onblur="showAdditionalInputs();">
           <a class="button_send disabled" onclick="sendMessage();">Send</a>
         </div>
         <div class="additional_input">

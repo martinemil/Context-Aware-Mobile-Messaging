@@ -10,8 +10,6 @@ function checkInputValue() {
   window.setTimeout("checkInputValue();", 100);
 }
 
-checkInputValue();
-
 // Send messages
 var msgContainer = document.querySelector('.messages');
 
@@ -120,6 +118,16 @@ function timerInSeconds() {
     recordTimer.innerHTML = time;
 
   }, 1000);
+}
+
+function hideAdditionalInputs() {
+  barFooter.classList.add('hide-additional-inputs');
+  console.log('Now hiding');
+}
+
+function showAdditionalInputs() {
+  console.log('Now showing');
+  barFooter.classList.remove('hide-additional-inputs');
 }
 
 
