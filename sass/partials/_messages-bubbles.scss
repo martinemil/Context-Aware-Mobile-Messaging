@@ -13,6 +13,19 @@
 		}
 	}
 
+	.cycle-icon {
+		position: absolute;
+		top: -13px;
+		left: -13px;
+		width: 27px;
+		height: 27px;
+		//border: 1px solid $blue;
+		border-radius: 50%;
+		background: #fff url('../img/bike/icon_536_blue.svg') no-repeat;
+		background-size: 78%;
+		background-position: 0 7px;
+	}
+
 	.time {
 		// Position
 		margin-bottom: 7px;
