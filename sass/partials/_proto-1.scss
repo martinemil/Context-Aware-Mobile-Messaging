@@ -23,4 +23,8 @@ vise én besked af gangen.
 			opacity: 1;
 		}
 	}
+
+	.send-bubble:last-of-type:before {
+		bottom: -25px; // From 20px
+	}
 }
