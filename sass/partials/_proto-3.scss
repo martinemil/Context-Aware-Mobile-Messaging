@@ -45,7 +45,6 @@ Brugeren har stadig magten.
 		font-size: 16px;
 		line-height: 20px;
 		background: #e5e5ea;
-		float: left;
 
 		&:after {
 			// Position
@@ -60,5 +59,22 @@ Brugeren har stadig magten.
 			background-image: url('../img/message-snippet_grey.svg');
 			left: -7px;
 		}
+	}
+
+	.context-alert-image {
+		position: relative;
+		z-index: 101;
+		margin: 255px auto 15px auto;
+		width: 35px;
+		height: 35px;
+		background: url('../img/stop-sign.png') no-repeat;
+		background-size: 100%;
+	}
+
+	.context-alert-text {
+		z-index: 101;
+		position: relative;
+		text-align: center;
+		font-size: 20px;
 	}
 }
