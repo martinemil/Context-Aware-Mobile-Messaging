@@ -10,6 +10,21 @@ function checkInputValue() {
   window.setTimeout("checkInputValue();", 100);
 }
 
+// Send messages Proto-0
+var msgContainer = document.querySelector('.messages');
+
+function sendMessageStandard() {
+  var textInputValue = textInput.value; // Get value from input field
+  var newMsgLi = document.createElement('li'); // Create new li for new message
+
+  newMsgLi.className = 'send-bubble animate-in extra-margin'; // Add class name to message li
+  newMsgLi.innerHTML = textInputValue; // Input text message to message li
+  msgContainer.appendChild(newMsgLi); // Append message li to message container
+
+  textInput.value = ''; // Clear value for input field
+  setTimeout(function() { scrollToBottom(); }, 600);
+}
+
 // Send messages
 var msgContainer = document.querySelector('.messages');
 
