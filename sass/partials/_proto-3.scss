@@ -10,13 +10,10 @@ Brugeren har stadig magten.
 */
 
 .proto-3 {
-	position: static;
+	//position: static;
 
 	.title {
 		z-index: 101;
-		position: absolute;
-		width: 100%;
-		height: 100%;
 	}
 }
 
@@ -29,15 +26,24 @@ Brugeren har stadig magten.
 	width: 100%;
 	height: 100%;
 	background: #fff;
-	opacity: 0.9;
+	opacity: 0.95;
 }
 
 .overlay-content {
+	.title-overlay {
+		position: relative;
+		z-index: 101;
+		margin-top: 10px;
+		text-align: center;
+		font-size: 17px;
+		font-weight: 500;
+	}
+
 	.receive-bubble {
 		// Position
 		z-index: 101;
 		position: relative;
-		margin: 40px;
+		margin: 50px 40px 0 40px;
 		// Define size
 		padding: 8px 13px;
 		// Layout
