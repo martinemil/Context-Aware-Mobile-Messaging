@@ -64,6 +64,7 @@ function sendPrewrittenMessage() {
 }
 
 function sendLocation() {
+  resetContentMargin();
   var newMsgLi = document.createElement('li'); // Create new li for new message
   var cycleIcon = document.createElement('div'); // Create new div for cycle icon
 
@@ -108,6 +109,7 @@ function recordMessage() {
 
     recordActive = 1;
   } else {
+    resetContentMargin();
     microphoneInput.className = 'microphone-input';
     recordTimer.className ='record-timer animate-fadeout'
     recordDescription.innerHTML = 'Talebesked'
@@ -150,6 +152,7 @@ function timerInSeconds() {
 }
 
 function hideAdditionalInputs() {
+  resetContentMargin();
   barFooter.classList.remove('animate-out');
   barFooter.classList.add('hide-additional-inputs');
 }
@@ -165,6 +168,11 @@ function hideOverlay() {
 
   overlayDiv.classList.add('hide');
   overlayContentDiv.classList.add('hide');
+}
+
+function resetContentMargin() {
+  var proto2 = document.querySelector('.proto-2');
+  proto2.classList.add('reset-content-margin');
 }
 
 

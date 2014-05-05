@@ -10,6 +10,9 @@ Brugeren har stadig magten.
 */
 
 .proto-2 {
+	margin-bottom: 140px;
+	padding-bottom: 0;
+
 	.bubble-red {
 		background-color: $red;
 
@@ -152,6 +155,11 @@ Brugeren har stadig magten.
 // fixed-height
 .hide-additional-inputs {
 	height: 44px;
+}
+
+// reset-content-margin
+.reset-content-margin {
+	margin-bottom: 0!important;
 }
 
 // animate-out
