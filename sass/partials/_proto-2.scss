@@ -31,6 +31,31 @@ Brugeren har stadig magten.
 		background: url('../img/play-icon.svg') no-repeat;
 		background-size: 100%;
 	}
+
+	.messages {
+		.send-location {
+			position: relative;
+			float: right;
+			width: 90px;
+			height: 110px;
+			margin: 7px auto 0 auto;
+			background: url('../img/map3.png');
+			background-size: 100%;
+			border-radius: 20px;
+
+			&:before {
+				// Position
+				position: absolute;
+				bottom: -20px;
+				right: 0;
+				// Layout
+				content: "Leveret";
+				color: $message-grey;
+				font-size: 11px;
+				font-weight: bold;
+			}
+		}
+	}
 }
 
 .bar-footer-proto-2 {
@@ -57,32 +82,12 @@ Brugeren har stadig magten.
 			background: $light-grey;
 
 			.prewritten-message {
-				// Position
-				position: relative;
-				margin: 27px auto 0 auto;
-				// Define size
-				max-width: 80%;
-				padding: 8px 13px;
-				// Layout
+				width: 90px;
+				height: 75px;
+				margin: 28px auto 0 auto;
+				background: url('../img/map3.png');
+				background-size: 100%;
 				border-radius: 20px;
-				font-size: 13px;
-				line-height: 20px;
-				background: $blue;
-				color: #fff;
-
-					&:after {
-						// Position
-						position: absolute;
-						bottom: 2px;
-						// Define size
-						width: 18px;
-						height: 13px;
-						content: "";
-						// Layout
-						background-size: 100%;
-						background-image: url('../img/message-snippet_blue.svg');
-						right: -7px;
-					}
 			}
 
 			.record-timer {

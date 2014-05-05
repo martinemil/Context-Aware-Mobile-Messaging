@@ -64,6 +64,21 @@ function sendPrewrittenMessage() {
   //setTimeout(function() { barFooter.className = 'hide' }, 600);
 }
 
+function sendLocation() {
+  var newMsgLi = document.createElement('li'); // Create new li for new message
+  var cycleIcon = document.createElement('div'); // Create new div for cycle icon
+
+  newMsgLi.className = 'send-location animate-in'; // Add class name to message li
+  cycleIcon.className = 'cycle-icon'; // Add class name to cycle icon
+  newMsgLi.appendChild(cycleIcon);
+  msgContainer.appendChild(newMsgLi); // Append message li to message container
+
+  textInput.value = ''; // Clear value for input field
+  barFooter.className = 'bar bar-footer bar-footer-proto-2 bar-standard send-messages remove-padding animate-out';
+  setTimeout(function() { scrollToBottom(); }, 600);
+  //setTimeout(function() { barFooter.className = 'hide' }, 600);
+}
+
 // Scroll to bottom
 function scrollToBottom() {
   var contentDiv = document.querySelector('.content');
