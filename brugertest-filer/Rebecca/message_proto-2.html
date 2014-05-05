@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Prototype 2</title>
+
+    <!-- Sets initial viewport load and disables zooming  -->
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+
+    <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <!-- Include the compiled Ratchet CSS -->
+    <link href="ratchet/css/ratchet.min.css" rel="stylesheet">
+    <link href="ratchet/css/ratchet-theme-ios.min.css" rel="stylesheet">
+    
+    <!-- Include custom styles -->
+    <link href="css/main.css" rel="stylesheet">
+
+    <!-- Include the compiled Ratchet JS -->
+    <!-- <script src="ratchet/js/ratchet.min.js"></script> -->
+
+    <script src="js/jquery-1.9.1.min.js"></script>
+  </head>
+  <body>
+
+    <header class="bar bar-nav">
+      <a href="index.html" data-transition="slide">
+        <button class="btn btn-link btn-nav pull-left">
+          <span class="icon icon-left-nav"></span>
+          Beskeder
+        </button>
+      </a>
+      <div class="context-menu">
+        <div class="wheel">
+        </div>
+        <p>Cykler</p>
+      </div>
+      <h1 class="title">Benjamin</h1>
+    </header>
+
+    <div class="bar bar-footer bar-footer-proto-2 bar-standard send-messages remove-padding">
+        <div class="add-padding">
+          <img class="icon-cam" src="img/ios-camera-icon.png" alt="camera" />
+          <input class="write-message-input" type="text" placeholder="Tekstbesked" onfocus="hideAdditionalInputs();">
+          <a class="button_send disabled" onclick="sendMessage();">Send</a>
+        </div>
+        <div class="additional_input">
+          <div class="audio-container" onclick="recordMessage();">
+            <div class="microphone-input">
+            </div>
+            <p class="record-description">Talebesked</p>
+          </div>
+          <div class="message-container" onclick="sendLocation();">
+            <div class="prewritten-message"></div>
+            <div class="record-timer full-opacity">0:00
+            </div>
+            <p class="prewritten-description">Send lokation</p>
+          </div>
+        </div>
+    </div>
+
+    <div class="content proto-2">
+      <ul class="messages">
+        
+        <!-- Tidligere samtale -->
+        <li class="time"><strong>i går</strong> 20.12</li>
+        <li class="send-bubble">Du henter far og Hanne ikk?</li>
+        <li class="receive-bubble">Jep!</li>
+        <li class="send-bubble">Okay godt nok</li>
+        <li class="send-bubble">Altså jeg tager hen til afuk efter skole som er på Vesterbro</li>
+        <li class="receive-bubble">Jep, lige ved Enghave station ikk?</li>
+        <li class="send-bubble">Jep;)</li>
+        <li class="receive-bubble">Godt godt</li>
+        <li class="send-bubble">;)</li>
+        
+        <!-- Den nye besked i brugertest -->
+        <li class="time"><strong>i dag</strong> 17.12</li>
+        <li class="receive-bubble">Hej Rebecca! Jeg er her nu. Står ude foran. Hvad med dig? :)</li>
+        
+      </ul>
+    </div>    
+
+    <script src="js/jquery-styles.js"></script>
+    <script src="js/main.js"></script>
+
+  </body>
+</html>
