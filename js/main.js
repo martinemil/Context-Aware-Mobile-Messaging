@@ -61,7 +61,6 @@ function sendPrewrittenMessage() {
   textInput.value = ''; // Clear value for input field
   barFooter.className = 'bar bar-footer bar-footer-proto-2 bar-standard send-messages remove-padding animate-out';
   setTimeout(function() { scrollToBottom(); }, 600);
-  setTimeout(function() { barFooter.className = 'hide' }, 600);
 }
 
 function sendLocation() {
@@ -76,7 +75,6 @@ function sendLocation() {
   textInput.value = ''; // Clear value for input field
   barFooter.className = 'bar bar-footer bar-footer-proto-2 bar-standard send-messages remove-padding animate-out';
   setTimeout(function() { scrollToBottom(); }, 600);
-  setTimeout(function() { barFooter.className = 'hide' }, 600);
 }
 
 // Scroll to bottom
@@ -128,6 +126,7 @@ function recordMessage() {
     msgContainer.appendChild(newMsgLi); // Append message li to message container
     recordTimer.className ='record-timer animate-fadeout';
     barFooter.className = 'bar bar-footer bar-footer-proto-2 bar-standard send-messages remove-padding animate-out';
+    setTimeout(function() { scrollToBottom(); }, 600);
   }
 }
 
@@ -152,13 +151,11 @@ function timerInSeconds() {
 
 function hideAdditionalInputs() {
   barFooter.classList.add('hide-additional-inputs');
-  console.log('Now hiding');
 }
 
-function showAdditionalInputs() {
-  console.log('Now showing');
-  barFooter.classList.remove('hide-additional-inputs');
-}
+// function showAdditionalInputs() {
+//   barFooter.classList.remove('hide-additional-inputs');
+// }
 
 function hideOverlay() {
   console.log('STOP! :)');
