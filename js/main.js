@@ -150,6 +150,7 @@ function timerInSeconds() {
 }
 
 function hideAdditionalInputs() {
+  barFooter.classList.remove('animate-out');
   barFooter.classList.add('hide-additional-inputs');
 }
 
