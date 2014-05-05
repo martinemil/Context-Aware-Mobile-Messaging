@@ -61,7 +61,7 @@ function sendPrewrittenMessage() {
   textInput.value = ''; // Clear value for input field
   barFooter.className = 'bar bar-footer bar-footer-proto-2 bar-standard send-messages remove-padding animate-out';
   setTimeout(function() { scrollToBottom(); }, 600);
-  //setTimeout(function() { barFooter.className = 'hide' }, 600);
+  setTimeout(function() { barFooter.className = 'hide' }, 600);
 }
 
 function sendLocation() {
@@ -76,7 +76,7 @@ function sendLocation() {
   textInput.value = ''; // Clear value for input field
   barFooter.className = 'bar bar-footer bar-footer-proto-2 bar-standard send-messages remove-padding animate-out';
   setTimeout(function() { scrollToBottom(); }, 600);
-  //setTimeout(function() { barFooter.className = 'hide' }, 600);
+  setTimeout(function() { barFooter.className = 'hide' }, 600);
 }
 
 // Scroll to bottom
@@ -158,6 +158,15 @@ function hideAdditionalInputs() {
 function showAdditionalInputs() {
   console.log('Now showing');
   barFooter.classList.remove('hide-additional-inputs');
+}
+
+function hideOverlay() {
+  console.log('STOP! :)');
+  var overlayDiv = document.querySelector('.overlay');
+  var overlayContentDiv = document.querySelector('.overlay-content');
+
+  overlayDiv.classList.add('hide');
+  overlayContentDiv.classList.add('hide');
 }
 
 
