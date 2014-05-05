@@ -30,6 +30,17 @@ Brugeren har stadig magten.
 }
 
 .overlay-content {
+	.hidden-back-button {
+		position: absolute;
+		z-index: 102;
+		top: 0;
+		left: 0;
+		width: 80px;
+		height: 50px;
+		background: red;
+		opacity: 0;
+	}
+
 	.title-overlay {
 		position: relative;
 		z-index: 101;
