@@ -25,7 +25,7 @@
   </head>
   <body>
 
-    <header class="bar bar-nav">
+    <header class="bar bar-nav proto-3">
       <a href="index.html" data-transition="slide">
         <button class="btn btn-link btn-nav pull-left">
           <span class="icon icon-left-nav"></span>
@@ -37,7 +37,7 @@
         </div>
         <p>Cykler</p>
       </div>
-      <h1 class="title">Benjamin</h1>
+      <h1 class="title">Martin Emil</h1>
     </header>
 
     <div class="bar bar-standard bar-footer send-messages">
@@ -46,26 +46,39 @@
         <a class="button_send disabled" onclick="sendMessage();">Send</a>
     </div>
 
-    <div class="content proto-1">
+    <div class="content">
       <ul class="messages">
-
+        
         <!-- Tidligere samtale -->
-        <li class="time"><strong>i går</strong> 10.12</li>
-        <li class="send-bubble">Kl 17 ok?</li>
-        <li class="time"><strong>i dag</strong> 12.11</li>
-        <li class="send-bubble">Regn? ....Og har du mulighed for at holde Ada imens? : )</li>
-        <li class="receive-bubble">Ja vejret skifter ret meget! Vi må jo lige se, når vi kommer nærmere kl 17, om det regner. Jeg kan godt holde Ada imens :).</li>
-        <li class="time"><strong>i dag</strong> 15.35</li>
-        <li class="receive-bubble">Hvad er det nu, jeres adresse er? Vejret ser ud til at holde. Jeg ringer bare, når vi er ude foran cirka 17</li>
-        <li class="receive-bubble">Det drypper dog lidt en gang i mellem</li>
-        <li class="send-bubble">Hej : ) ja, det skifter meget. Fint m mig hvis det regner.. Ok, hvis den blir 15 over. Ada vågner nok ret sharp kl 17...</li>
-        <li class="receive-bubble">Ok. Vi ses!</li>
+        <li class="time"><strong>i går</strong> 18.16</li>
+        <li class="receive-bubble">Hej Jacob,<br>Helt sikkert! :-)<br>Det ser ud til at regne en del kl. 10 imorgen. (Vi skal være udenfor i ca. 20 min). Vejret ser bedre ud torsdag kl. 10. Kunne det være en mulighed hvis alt for meget regn skal undgås?<br>Vh. Martin</li>
+        <li class="send-bubble">Så skal det være torsdag kl 11. Passer det jer?</li>
+        <li class="receive-bubble">Torsdag kl 11 er godt.</li>
+        <li class="receive-bubble">Lad os sige det :)</li>
+        <li class="send-bubble">Super</li>
         
         <!-- Den nye besked i brugertest -->
-        <li class="time"><strong>i dag</strong> 17.15</li>
-        <li class="receive-bubble">Hej Maria! Jeg er her nu. Står ude foran. Hvad med dig? :)</li>
+        <li class="time"><strong>i dag</strong> 11.10</li>
+        <li class="receive-bubble">Hej Jacob! Jeg er her nu. Står ude foran. Hvad med dig? :)</li>
         
       </ul>
+    </div>
+
+    <div class="overlay">
+    </div>
+    <div class="overlay-content">
+      <a href="index.html" class="hidden-back-button"></a>
+      <div class="title-overlay">Martin Emil</div>
+      <div class="receive-bubble">
+        Hej Jacob! Jeg er her nu. Står ude foran. Hvad med dig? :)
+      </div>
+      <div class="context-alerts">
+        <div class="context-alert-image">
+        </div>
+        <div class="context-alert-text">
+          Ikke muligt at svare,<br>mens du cykler
+        </div>
+      </div>
     </div>
 
     <script src="js/jquery-styles.js"></script>
